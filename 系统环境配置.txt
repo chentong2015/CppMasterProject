@@ -1,0 +1,22 @@
+GCC(GNU Compiler Collection): Mac自带GCC, xCode基于Gcc构建
+https://gcc.gnu.org/
+
+TODO. C++ 如何编译和运行
+1. gcc编译源码文件再执行
+   - gcc is the C compiler frontend to GCC.
+   - g++ is the C++ compiler frontend to GCC.
+
+   编译执行的cpp源文件并执行
+   > brew install gcc
+   > g++ -o hello hello.cpp
+   > ./hello
+   
+2. Makefiles批量编译源代码问题
+   - cmake-build-debug
+   同一个项目中只包含一个运行的main方法
+
+TODO. C++ 开发IDE
+- CLion付费版本 https://www.jetbrains.com/clion/
+- XCode操作繁琐
+- VisualStudio不支持Mac平台C++开发
+- VisualStudioCode需要配置插件环境
