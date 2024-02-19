@@ -1,5 +1,5 @@
 #include <iostream>
-#include "demo/SubMonster.h"
+#include "SubMonster.h"
 #include "test/NumericInput.h"
 // 只需要引入子类header(自动引入父类header)
 
