@@ -1,0 +1,2 @@
+CkHttpRequest 第三方类库
+https://www.example-code.com/cpp/httprequest_application_json.asp

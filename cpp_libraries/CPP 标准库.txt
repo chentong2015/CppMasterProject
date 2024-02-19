@@ -1,0 +1,6 @@
+C++ 标准库:
+学习底层原生APIs库中定义的函数
+程序可以从符合标准的C++标准库实现中调用大量函数
+https://learn.microsoft.com/zh-cn/cpp/standard-library/cpp-standard-library-reference?view=msvc-170
+
+C++ 如何映入第三方模块和类库 ？

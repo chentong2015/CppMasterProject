@@ -1,0 +1,2 @@
+Input/output with files
+https://cplusplus.com/doc/Tutorial/files/#google_vignette
