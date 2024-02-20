@@ -1,2 +1,0 @@
-CPP 标准库容器
-https://learn.microsoft.com/zh-cn/cpp/standard-library/stl-containers?view=msvc-170

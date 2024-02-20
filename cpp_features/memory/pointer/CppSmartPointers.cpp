@@ -31,7 +31,6 @@ public:
 
 int mainTest() {
     Widget1 w1;
-    // constructs w, including the w.g gadget member
     w1.draw();
 
     Widget2 w2(1000000);

@@ -1,0 +1,11 @@
+C++ 17 Optional<> 可空类型
+https://en.cppreference.com/w/cpp/utility/optional
+
+
+#include <optional>
+#include <experimental/optional>
+
+std::optional<std::string> value;
+std::optional<int> v1;     // "empty" int
+std::optional<int> v2(3);  // Not empty, "contains a 3"
+v1.has_value();            // false

@@ -1,0 +1,12 @@
+C++ 标准库: 底层原生APIs库函数
+程序可以从符合标准的C++标准库实现中调用大量函数
+https://learn.microsoft.com/zh-cn/cpp/standard-library/cpp-standard-library-reference?view=msvc-170
+
+C++ 标准库头文件: 引入核心的APIs
+https://learn.microsoft.com/zh-cn/cpp/standard-library/cpp-standard-library-header-files?view=msvc-170
+
+CPP 标准库算法: 默认库算法
+https://learn.microsoft.com/zh-cn/cpp/standard-library/algorithm?view=msvc-170
+
+CPP 标准库容器: 引入数据结构
+https://learn.microsoft.com/zh-cn/cpp/standard-library/stl-containers?view=msvc-170

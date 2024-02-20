@@ -11,9 +11,9 @@ TODO. C++ 如何编译和运行
    > g++ -o hello hello.cpp
    > ./hello
    
-2. Makefiles批量编译源代码问题
-   - cmake-build-debug
-   同一个项目中只包含一个运行的main方法
+2. Makefiles批量编译源代码, 只包含一个可执行的main方法
+   - /usr/bin/make
+   - cmake build systems 系统的构建工具
 
 TODO. C++ 开发IDE
 - CLion付费版本 https://www.jetbrains.com/clion/

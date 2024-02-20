@@ -1,0 +1,7 @@
+TODO. C++ 语言基本认识
+C++ 属于强类型的面向对象语言，支持多继承
+C++ 允许在一个文件中定义多个class
+
+C++ 语言定义文档
+https://learn.microsoft.com/zh-cn/cpp/ & en-us
+https://learn.microsoft.com/zh-cn/windows/win32/learnwin32/learn-to-program-for-windows

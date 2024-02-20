@@ -1,0 +1,19 @@
+
+
+TODO. nullptr 只能设置给指针变量，null不能设置给对象
+- CPP类型的对象无法被设置成Null，可将指向对象地址的指针设置成nullptr
+- 使用Null Object Pattern模式
+
+TODO. class类的构造器和析构器
+Constructors(构造函数)和destructors(析构函数)不能声明为const或volatile
+但可以在const或volatile对象上调用它们
+
+
+
+-------------------------------------------------------------
+C++ 析构器的实现，类型的销毁
+C++ static 方法的定义和实例方法的区别
+C++ Virtual 虚函数
+
+C++ 三种继承 private, protected, public
+C++ 菱形继承
