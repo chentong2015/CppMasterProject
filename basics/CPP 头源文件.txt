@@ -1,9 +1,0 @@
-C++ 头文件定义标签的含义
-- Header File 定义函数原型或函数实现，用于被其他文件include引用
-- #include引用子类header将自动引入父类header
-- Source File 定义header头文件函数的实现
-
-#ifndef CPP_MASTER_VECTORDEMO_H
-#define CPP_MASTER_VECTORDEMO_H
-  class HeaderClass () {}
-#endif //CPP_MASTER_VECTORDEMO_H

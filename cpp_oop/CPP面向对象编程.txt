@@ -1,4 +1,5 @@
-
+TODO. CPP 面向对象编程
+一切均为class，应该将函数封装到类中而非单独定义在文件中
 
 TODO. nullptr 只能设置给指针变量，null不能设置给对象
 - CPP类型的对象无法被设置成Null，可将指向对象地址的指针设置成nullptr
