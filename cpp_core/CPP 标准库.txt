@@ -1,5 +1,7 @@
 C++ 标准库: 底层原生APIs库函数
 程序可以从符合标准的C++标准库实现中调用大量函数
+C++ 标准库容器可被视为本机字符串类型，因为它们是所有兼容 C++ 生成环境包含的标准库的一部分
+
 https://learn.microsoft.com/zh-cn/cpp/standard-library/cpp-standard-library-reference?view=msvc-170
 
 C++ 标准库头文件: 引入核心的APIs

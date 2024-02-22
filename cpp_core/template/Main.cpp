@@ -25,6 +25,8 @@ void print(const string& s, const C& c) {
     cout << endl;
 }
 
+// CPP 源代码中的模版函数定义
+// _F 和 __f 的标识符由C++de实现所保留
 template <class _ForwardIterator, class _Tp, class _Compare>
 bool binary_search(_ForwardIterator __first, _ForwardIterator __last,
                    const _Tp& __value, _Compare __comp) {

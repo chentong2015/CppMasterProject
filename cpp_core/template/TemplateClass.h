@@ -31,4 +31,12 @@ public:
     }
 };
 
+// 嵌套模版的定义，推荐使用auto来进行类型推断
+template<typename T, template<typename U, int I> class Arr>
+class MyClass2 {
+    T t; //OK
+    Arr<T, 10> a;
+    // U u; Error. U not in scope
+};
+
 #endif //CPP_MASTER_TEMPLATECLASS_H
