@@ -2,7 +2,6 @@
 #include <map>
 
 #include "vector/VectorHelper.h"
-#include "../../cpp_oop/struct/MyStruct.h"
 
 using namespace std;
 
@@ -16,7 +15,6 @@ int mainTest() {
 
     // 推荐使用统一初始化, 而非使用push_back()函数
     vector<string> apples {"item1", "item2"};
-    std::vector<MyStruct> v3{{"Norah", 2.7}, {"Frank", 3.5}};
 
     // 使用类型名称直接调用static方法
     std::vector<int> v { 1, 3, 5, 7 };

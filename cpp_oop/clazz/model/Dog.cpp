@@ -1,7 +1,7 @@
-//
-// Created by CHEN Tong on 03/01/2022.
-//
 #include "Dog.h"
+#include <iostream>
+
+using namespace std;
 
 Dog::Dog() {
     cout << "Dog creation without name" << endl;

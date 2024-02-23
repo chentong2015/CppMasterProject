@@ -1,7 +1,3 @@
-//
-// Created by CHEN Tong on 03/01/2022.
-//
-
 #ifndef JDK_JVM_MASTER_DOG_H
 #define JDK_JVM_MASTER_DOG_H
 
@@ -10,11 +6,11 @@
 class Dog : public Animal {
 
 public:
-    string sub_name;
+    std::string sub_name;
 
 public:
     Dog();
-    Dog(string name, string sub_name);
+    Dog(std::string name, std::string sub_name);
     virtual ~Dog();
     virtual void move();
 };

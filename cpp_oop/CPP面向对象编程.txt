@@ -10,11 +10,10 @@ Constructors(构造函数)和destructors(析构函数)不能声明为const或vol
 但可以在const或volatile对象上调用它们
 
 
-
 -------------------------------------------------------------
 C++ 析构器的实现，类型的销毁
 C++ static 方法的定义和实例方法的区别
-C++ Virtual 虚函数
+C++ virtual 虚函数, 是否需要声明 ？
 
 C++ 三种继承 private, protected, public
 C++ 菱形继承

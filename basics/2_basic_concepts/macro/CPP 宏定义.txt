@@ -1,10 +1,6 @@
 C和C++中的宏是指编译之前由预处理器处理的标记
 在编译文件之前，宏标记的每个实例都将替换为其定义的值或表达式
 
-TODO. 宏定义的使用
-#define SIZE 10 // C样式编程定义编译时常量值，宏容易出错且难以调试
-constexpr int size = 10; // C++ 优先使用constexpr变量定义编译时常量
-
 TODO. C++ Header头文件中的宏定义
  用于防止同一个头文件被多次引入到同一个源文件中导致编译出错
  #ifndef会预先判断，避免重复同一个头文件的定义，导致不符合ODR规则
@@ -13,7 +9,3 @@ TODO. C++ Header头文件中的宏定义
   class HeaderClass () {
   }
 #endif //CPP_MASTER_VECTORDEMO_H
-
-TODO. The One Definition Rule (ODR) 唯一定义规则
-classes/structs and non-inline functions cannot have more than one definition in the entire program
-template and types cannot have more than one definition by translation unit.

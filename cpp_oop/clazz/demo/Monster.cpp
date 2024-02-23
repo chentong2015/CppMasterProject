@@ -1,10 +1,13 @@
 #include <iostream>
 #include "Monster.h"
 
-// size属性用于==比较器，需要设置初始化值
-Monster::Monster(): size(10) {}
+// 构造器直接通过属性方法设置，或者通过this指针设置属性的值
+Monster::Monster(): size(10) {
+}
 
-Monster::Monster(const std::string &name) : name(name) {}
+Monster::Monster(const std::string &name) : name(name) {
+    this->name = name;
+}
 
 Monster::Monster(int size, int power, const std::string &name) : size(size), power(power), name(name) {
     std::cout << "Call monster constructor" << std::endl;
@@ -20,7 +23,8 @@ void Monster::setSize(int size) {
     Monster::size = size;
 }
 
-// 基于某个属性的比较器的实现
+// 基于size属性的"=="比较器的实现
+// size属性在构造器中必须具有初始化值
 bool Monster::operator==(const Monster &rhs) const {
     return size == rhs.size;
 }

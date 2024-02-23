@@ -1,22 +1,17 @@
-//
-// Created by CHEN Tong on 03/01/2022.
-//
-
 #ifndef JDK_JVM_MASTER_ANIMAL_H
 #define JDK_JVM_MASTER_ANIMAL_H
 
 #include <string>
 #include <iostream>
-using namespace std;
 
 class Animal {
 
 public:
-    string str_name;
+    std::string str_name;
 public:
     // 构造函数
     Animal();
-    Animal(string name);
+    Animal(std::string name);
 
     // 虚函数，能够被重写
     virtual void eat();

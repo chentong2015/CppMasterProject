@@ -4,8 +4,6 @@
 #include <iostream>
 #include <vector>
 
-using namespace std;
-
 class VectorDemo {
 
 private:
@@ -24,22 +22,22 @@ public:
 
     // 通过for-each或iterator指针来遍历序列容器
     static void testVectorIteration() {
-        vector<int> v1a;
-        vector<int>::iterator Iter1a;
+        std::vector<int> v1a;
+        std::vector<int>::iterator Iter1a;
         for (int i = 0; i <= 5; i++ ) {
             v1a.push_back(i);
         }
 
         for (auto Iter : v1a) {
-            cout << Iter << " ";
+            std::cout << Iter << " ";
         }
         for(Iter1a = v1a.begin(); Iter1a != v1a.end(); Iter1a++) {
-            cout << *Iter1a << " ";
+            std::cout << *Iter1a << " ";
         }
     }
 
     static void testVectorAlgo() {
-        vector<int> v1;
+        std::vector<int> v1;
         for(auto i = -2; i <= 4; ++i){
             v1.push_back(i);
         }
@@ -48,7 +46,7 @@ public:
         sort(v1.begin(), v1.end(), mod_lesser);
 
         bool isFound = binary_search(v1.begin(), v1.end(), -3, mod_lesser);
-        cout << isFound << std::endl;
+        std::cout << isFound << std::endl;
     }
 };
 

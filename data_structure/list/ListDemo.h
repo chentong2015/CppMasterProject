@@ -5,13 +5,11 @@
 #include <list>
 #include <functional>
 
-using namespace std;
-
 class ListDemo {
 
 public:
     static void testList() {
-        list<int> List1 {50, 10, 30, 20, 25, 5};
+        std::list<int> List1 {50, 10, 30, 20, 25, 5};
 
         // 自动排序算法的实现
         List1.sort();
@@ -19,15 +17,15 @@ public:
 
         // List for-each循环
         for(auto item : List1) {
-            cout << item << " ";
+            std::cout << item << " ";
         }
 
         // 在指定的范围内进行二分法搜索
         bool isFound = binary_search(List1.begin(), List1.end(), 10);
-        cout << "Found value 10: " + to_string(isFound) << std::endl;
+        std::cout << "Found value 10: " + std::to_string(isFound) << std::endl;
 
-        isFound = binary_search(List1.begin(), List1.end(), 10, greater<int>());
-        cout << "Found value > 10: " + to_string(isFound) << std::endl;
+        isFound = binary_search(List1.begin(), List1.end(), 10, std::greater<int>());
+        std::cout << "Found value > 10: " + std::to_string(isFound) << std::endl;
     }
 };
 

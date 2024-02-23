@@ -1,0 +1,14 @@
+TODO. The One Definition Rule (ODR) 唯一定义规则
+classes/structs and non-inline functions cannot have more than one definition in the entire program
+template and types cannot have more than one definition by translation unit.
+
+TODO. C++ 程序的编译
+编译程序时，每个.cpp文件都会独立编译为一个编译单元(compilation unit)
+编译器完成将每个.cpp文件编译为.obj文件后，会将.obj文件传递给链接器(linker)
+链接器会将所有编译单元合并成单个程序，并验证文件中的声明是否一致
+链接器合并对象文件时，会发现每一个类型定义且不能重复
+
+TODO. C++ 为什么要设计头文件 ？
+1. 编译器在编译单个.cpp文件时，不知道在其他编译单元中声明了哪些名称
+2. 如果你定义类、函数或全局变量，则必须在使用它的每个附加.cpp文件中提供对它的声明
+3. 在所有文件中每个声明必须完全相同，不一致会导致连接器在合并时错误或意外行为
