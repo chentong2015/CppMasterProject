@@ -1,6 +1,8 @@
 TODO. The One Definition Rule (ODR) 唯一定义规则
 classes/structs and non-inline functions cannot have more than one definition in the entire program
 template and types cannot have more than one definition by translation unit.
+ODR 规则的冲突通常显示为链接器错误
+在多个翻译单元中定义同一名称时，将发生链接器错误
 
 TODO. C++ 程序的编译
 编译程序时，每个.cpp文件都会独立编译为一个编译单元(compilation unit)

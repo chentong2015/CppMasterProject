@@ -2,7 +2,7 @@
 #include <fstream>
 using namespace std;
 
-int mainTest() {
+int main() {
     ofstream myFile;
     myFile.open("../example.txt"); // 根据相对路径创建文件
     myFile << "Writing this to a file.\n"; // 写入数据

@@ -15,5 +15,5 @@ C++ 析构器的实现，类型的销毁
 C++ static 方法的定义和实例方法的区别
 C++ virtual 虚函数, 是否需要声明 ？
 
-C++ 三种继承 private, protected, public
+C++ 三种继承 private, protected, public ==> 默认是private的可访问性
 C++ 菱形继承

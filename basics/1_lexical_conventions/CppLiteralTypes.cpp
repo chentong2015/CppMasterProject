@@ -2,7 +2,7 @@ constexpr int MAXIMUM_ERROR_THRESHOLD = 100;
 
 // TODO. C++文本主要有六个类别
 // 整数、浮点、布尔和指针、字符和字符串
-int mainTest(int num) {
+int main(int num) {
     // 整数文本
     int i = 157;         // 首字母非0则表示十进制整型文本
     int k = 0365;        // 首字母为0则表示八进制

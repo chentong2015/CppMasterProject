@@ -1,7 +1,7 @@
 #include <iostream>
 #include "demo/SubMonster.h"
 
-int mainTest() {
+int main() {
     auto subMonster1 = new SubMonster(10, 100, "name");
     subMonster1->makeNoise();
     delete subMonster1;

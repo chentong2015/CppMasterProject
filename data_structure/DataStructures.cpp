@@ -9,7 +9,7 @@ using namespace std;
 // 1. 使用vector替代原始数组，来作为C++中的序列容器
 // 2. 使用map(而不是unordered_map)，作为默认关联容器
 // 3. 使用set、multimap和multiset
-int mainTest() {
+int main() {
     map<string, string> apple_color;
     apple_color["Granny Smith"] = "Green";
 

@@ -25,7 +25,7 @@ void func_C(MyClass mc) {
     mc.print();
 }
 
-int mainTest() {
+int main() {
     // 使用母类指针来指向子类的实例化的对象
     CharInput* input = new NumericInput();
     input->add('1');

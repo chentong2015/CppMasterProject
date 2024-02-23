@@ -29,7 +29,7 @@ public:
 };
 
 
-int mainTest() {
+int main() {
     Widget1 w1;
     w1.draw();
 

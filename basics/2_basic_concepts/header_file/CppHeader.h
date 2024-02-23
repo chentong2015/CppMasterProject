@@ -16,8 +16,8 @@
 namespace N {
 
     class MyClass {
-        public:
-           virtual void doSomething();
+    public:
+        virtual void doSomething();
     };
 
     // 可声明内联的名称空间
@@ -47,15 +47,15 @@ namespace N {
 
     // regular class definition, but no non-inline function definitions
     class my_class {
-            friend class other_class;
-        public:
-            void do_something();   // definition in my_class.cpp
-                inline void put_value(int i) {
-                vals.push_back(i);
-            } // inline OK
-        private:
-            vstr vals;
-            int i;
+        friend class other_class;
+    public:
+        void do_something();   // definition in my_class.cpp
+            inline void put_value(int i) {
+            vals.push_back(i);
+        } // inline OK
+    private:
+        vstr vals;
+        int i;
     };
 
     struct RGB {
@@ -66,13 +66,13 @@ namespace N {
 
     template <typename T>  // template definition
     class value_store {
-        public:
-            value_store<T>() = default;
-            void write_value(T val) {
-                //... function definition OK in template
-            }
-        private:
-            std::vector<T> vals;
+    public:
+        value_store<T>() = default;
+        void write_value(T val) {
+            //... function definition OK in template
+        }
+    private:
+        std::vector<T> vals;
     };
 
     template <typename T>  // template declaration
