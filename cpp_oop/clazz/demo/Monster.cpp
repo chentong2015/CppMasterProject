@@ -5,8 +5,13 @@
 Monster::Monster(): size(10) {
 }
 
+// TODO. 三种属性赋值的方式(前提是属性具有可访问性)
+// 1. 直接调用属性初始化函数
+// 2. 使用this指针访问属性并赋值
+// 3. 使用类型访问属性并赋值
 Monster::Monster(const std::string &name) : name(name) {
     this->name = name;
+    Monster::name = name;
 }
 
 Monster::Monster(int size, int power, const std::string &name) : size(size), power(power), name(name) {
@@ -23,8 +28,7 @@ void Monster::setSize(int size) {
     Monster::size = size;
 }
 
-// 基于size属性的"=="比较器的实现
-// size属性在构造器中必须具有初始化值
+// 基于size属性的"=="比较器实现，属性在构造器中必须具有初始化值
 bool Monster::operator==(const Monster &rhs) const {
     return size == rhs.size;
 }

@@ -3,17 +3,14 @@
 
 using namespace std;
 
-// 所有C++程序都必须具有main函数
+// 所有C++程序都必须具有main函数(源代码开始执行位置)
 // 尝试在没有main函数的情况下编译C++程序，编译器将引发错误
-//
-// main 函数是源代码开始执行的位置
 // 在程序进入main函数之前，没有显式初始值设定项的所有static类成员都设为零
 //
 // TODO. main 两种函数声明
 // - main 未指定返回值，编译器会提供零作为返回值
-// - main 如果设置void返回参数，则无法使用return语句将exit代码返回到父进程或操作系统中
+// - main 不能使用void返回参数，在程序推出时需要返回值
 // int main();
-// void main(); 必须使用exit程序终止函数
 int main(int argc,        // 参数计数的整数 >= 1
          char *argv[],    // 命令行自变量的字符数组
          char *envp[]) {  // 环境变量的字符数组

@@ -13,11 +13,11 @@ public:
     MyClass(int num, std::string name) : num(num), name(std::move(name)) {}
 
     void setName(const std::string &name) {
-        MyClass::name = name;
+        this->name = name;
     }
 
     void print() const {
-        std::cout << name << ":" << num << std::endl;
+        std::cout << name << std::endl;
     }
 };
 

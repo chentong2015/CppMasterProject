@@ -19,7 +19,7 @@ using namespace std;
 int valueScope = 7;   // i has global scope, outside all blocks
 
 int main() {
-    int maxValue;                // Not recommended! maxValue contains garbage bits until it's initialized.
+    int maxValue;                // Not recommended! maxValue contains garbage bits until init
     int result = 0;              // Declare and initialize an integer.
     double coefficient = 10.8;   // Declare and initialize a floating
 

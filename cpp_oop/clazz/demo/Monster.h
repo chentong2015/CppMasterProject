@@ -4,13 +4,14 @@
 #include <iostream>
 
 class Monster {
-
-private: // 默认是私有访问属性
+private:
+    // TODO. 默认属性的可访问性为私有
     int size;
     std::string name;
 
 protected:
-    int power = 100; // 受保护的属性可以在继承类中访问
+    // 受保护的属性可以在继承类中访问
+    int power = 100;
 
 public:
     // Constructor 默认构造器和自定义的构造器

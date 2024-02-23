@@ -13,7 +13,18 @@ Constructors(构造函数)和destructors(析构函数)不能声明为const或vol
 -------------------------------------------------------------
 C++ 析构器的实现，类型的销毁
 C++ static 方法的定义和实例方法的区别
-C++ virtual 虚函数, 是否需要声明 ？
+    static 静态实例 ？
 
-C++ 三种继承 private, protected, public ==> 默认是private的可访问性
+C++ virtual 虚函数, 是否需要声明 ？
+    不添加virtual是否也能够重写 ？
+
+C++ 三种可访问性
+    private 只能在当前类定义中访问到
+    protected 只能在当前类中或者它的继承类中访问 ??
+    public 全局访问
+    package ? 没有包的概念 ！！
+
+C++ 三种继承
+    每种继承只能方法指定“访问性”下的成员
+
 C++ 菱形继承

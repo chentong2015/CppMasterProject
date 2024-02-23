@@ -5,10 +5,9 @@
 #include <iostream>
 
 class Animal {
-
 public:
     std::string str_name;
-public:
+
     // 构造函数
     Animal();
     Animal(std::string name);

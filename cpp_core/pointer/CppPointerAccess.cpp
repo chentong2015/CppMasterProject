@@ -1,6 +1,6 @@
 #include <iostream>
 #include "model/MyClass.h"
-#include "model/NumericInput.h"
+#include "model/InputNumeric.h"
 
 // TODO. 复制对象的地址通常比复制整个对象更加高效
 // Accepts a MyClass pointer
@@ -32,6 +32,7 @@ int main() {
     input->add('a');
     input->add('0');
     cout << input->getValue() << endl;
+
     delete input;
     return 0;
 }

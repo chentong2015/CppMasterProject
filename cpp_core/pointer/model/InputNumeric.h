@@ -1,4 +1,4 @@
-﻿#include "CharInput.h"
+﻿#include "InputChar.h"
 
 class NumericInput : public CharInput {
 

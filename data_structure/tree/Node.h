@@ -10,11 +10,12 @@ private:
 	Node* right;
 
 public:
-	Node(int value, Node* left, Node* right) {
-		this->value = value;
-		this->left = left;
-		this->right = right;
-	}
+    // 允许使用null进行赋值
+    Node(int value, Node* left, Node* right) {
+        this->value = value;
+        this->left = left;
+        this->right = right;
+    }
 
 	int getValue() const{
 		return value;

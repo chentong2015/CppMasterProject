@@ -7,7 +7,7 @@ public:
 	string character; 
 
 public:
-	virtual void add(char c) {
+    void add(char c) {
 		character += c;
 	}
 
