@@ -13,11 +13,16 @@ int main() {
     map<string, string> apple_color;
     apple_color["Granny Smith"] = "Green";
 
-    // 推荐使用统一初始化, 而非使用push_back()函数
-    vector<string> apples {"item1", "item2"};
+    // 推荐直接初始化数据
+    std::vector<string> apples {"item1", "item2"};
 
-    // 使用类型名称直接调用static方法
-    std::vector<int> v { 1, 3, 5, 7 };
+    vector<int> vect1 {10, 20, 30};
+    vector<int> vect2(vect1.begin(), vect1.end());
+    for (auto x : vect2) {
+        cout << x << " ";
+    }
+
+    std::vector<int> v {1, 3, 5, 7};
     int num = VectorHelper::countNumbers(v, 4);
     cout << num << endl;
     return 0;

@@ -27,12 +27,21 @@ void func_C(MyClass mc) {
 
 int main() {
     // 使用母类指针来指向子类的实例化的对象
-    CharInput* input = new NumericInput();
-    input->add('1');
-    input->add('a');
-    input->add('0');
-    cout << input->getValue() << endl;
+    NumericInput numericInput;
+    CharInput* charInputP = &numericInput;
+    std::cout << charInputP->getValue() << std::endl;
 
-    delete input;
+    // TODO. pointer being freed was not allocated
+    // 如果指针并没有指向在堆内存上malloc动态分配的(new)对象，则不能使用delete进行释放
+    // delete charInputP;
+
+    // TODO. input只能调用到它所指向的类型所包含的函数, 无法访问子类的函数
+    CharInput* inputP = new NumericInput();
+    inputP->add('1');
+    std::cout << inputP->getValue() << std::endl;
+
+    // 释放指针指向的堆内存空间，避免内存泄漏
+    delete inputP;
+
     return 0;
 }

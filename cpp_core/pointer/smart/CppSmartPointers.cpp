@@ -1,4 +1,5 @@
 #include <memory>
+#include <iostream>
 
 // 1. 对于没有在堆内存存储数据的对象，会自动销毁和回收资源
 // lifetime automatically tied to enclosing scope
@@ -13,21 +14,27 @@ class Widget2 {
 private:
     int* data;
 public:
-    Widget2(const int size) { data = new int[size]; } // acquire
-    ~Widget2() { delete[] data; } // release
+    Widget2(const int size) {
+        data = new int[size]; // acquire
+    }
+    ~Widget2() {
+        delete[] data; // release
+    }
     void do_something() {}
 };
 
-// TODO. C++11之后使用智能指针来避免指针的内存泄漏
+// 3. C++11之后使用智能指针来避免指针的内存泄漏
 // 智能指针可处理对其拥有的内存的分配和删除, 不需要在Widget类中显式析构函数
+// Use a smart pointer to manage the lifetime and ownership of heap-allocated objects
 class Widget3 {
 private:
     std::unique_ptr<int[]> data;
 public:
-    Widget3(const int size) { data = std::make_unique<int[]>(size); }
+    Widget3(const int size) {
+        data = std::make_unique<int[]>(size);
+    }
     void do_something() {}
 };
-
 
 int main() {
     Widget1 w1;

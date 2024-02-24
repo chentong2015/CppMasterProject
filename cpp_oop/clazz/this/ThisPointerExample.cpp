@@ -16,7 +16,7 @@ public:
     }
 };
 
-Buf::Buf(char* szBuffer, size_t sizeOfBuffer ) {
+Buf::Buf(char* szBuffer, size_t sizeOfBuffer) {
     sizeOfBuffer++; // account for a NULL terminator
     buffer = new char[sizeOfBuffer];
     if (buffer) {

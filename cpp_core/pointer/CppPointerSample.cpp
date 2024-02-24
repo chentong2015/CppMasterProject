@@ -43,26 +43,29 @@ int testPointerManipulation() {
 }
 
 // TODO. 指针的移动和遍历
+// 指针在移动时并不为null，会指向随机地址继续输出
+// while (p != nullptr) {
+//   cout << *p << endl;
+//   p++;
+// }
 int main() {
-    // "Help"字符串常量将转换为指向数组的第一个元素的 char*
-    // pointer指针随后递增3个元素，指向最后一个元素"p"
+    // Help字符串常量将转字符数组
+    // p1指针指向数组的第一个元素的地址
+    // p1指针随后递增3个元素，指向最后一个元素p
     const char* p1 = "Help" + 3;
     cout << *p1 << endl;
 
     string str = "hello";
-    const char* p2 = str.c_str();
+    const char* p2 = str.c_str(); // string to char array
     for (int index = 0; index < str.size(); index++) {
-        cout << *p2 << endl;
-        p2++;
+        // 指针移动来指向下一个地址，访问下一个数据
+        // cout << *p2 << endl;
+        // p2++;
+
+        // 通过指针坐标偏移来访问下一个数据
+        cout << p2[index] << endl;
     }
 
-    // TODO. 指针在移动的时候并不为null，会指向随机地址继续输出
-    // while (p != nullptr) {
-    //     cout << *p << endl;
-    //     p++;
-    // }
-
-    delete p1;
-    delete p2;
+    // p1, p2被没有指向动态内存分配的对象，不能delete释放
     return 0;
 }

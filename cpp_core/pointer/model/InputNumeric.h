@@ -1,4 +1,5 @@
 ﻿#include "InputChar.h"
+#include <iostream>
 
 class NumericInput : public CharInput {
 
@@ -9,4 +10,8 @@ public:
 			character += c;
 		}
 	}
+
+    void anotherMethod() {
+        std::cout << "another";
+    }
 };

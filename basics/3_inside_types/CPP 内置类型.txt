@@ -1,0 +1,21 @@
+内置类型：基本类型
+由C++语言标准指定，内置于编译器中，未在任何头文件中定义
+- Void 类型
+- std::nullptr_t
+- 布尔类型
+- 字符类型
+  - char 类型是一种字符表示类型
+  - wchar_t 类型的变量是宽字符或多字节字符类型
+  - char8_t 类型用于UTF-8字符表示形式
+  - char16_t 类型用于UTF-16字符表示形式
+  - char32_t 类型用于UTF-32字符表示形式
+- 浮点类型
+  - float
+  - double
+  - long double
+- 整数类型
+  - int 类型是默认的基本整数类型
+  - unsigned 修饰符关键字指定一个只能保存非负值的无符号表示形式
+
+数据类型的范围
+https://learn.microsoft.com/zh-cn/cpp/cpp/data-type-ranges?view=msvc-170

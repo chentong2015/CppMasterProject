@@ -2,5 +2,5 @@
 #include <iostream>
 
 void DemoSub::print() {
-    std::cout << "print demo sub" << std::endl;
+    std::cout << "print inheritance sub" << std::endl;
 }

@@ -28,7 +28,7 @@ int main() {
     // age = 12;                 // Error. Variable declaration must specify a type or use auto!
     // result = "Kenny G.";      // Error. Can't assign text to an int.
 
-    std::string str = "one"s;    // 使用标准库中定义好的类型
+    std::string str = "one";    // 使用标准库中定义好的类型
     string str1 = "zero";
 
     int valueScope = 5;           // block scope, hides valueScope at global scope

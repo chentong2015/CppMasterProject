@@ -1,5 +1,5 @@
 #include <iostream>
-#include "demo/SubMonster.h"
+#include "inheritance/SubMonster.h"
 
 // TODO. 值类型的复制
 class MyRefType {

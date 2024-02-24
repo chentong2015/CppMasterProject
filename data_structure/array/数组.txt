@@ -1,0 +1,3 @@
+https://cplusplus.com/doc/tutorial/arrays/
+
+https://learn.microsoft.com/zh-cn/cpp/cpp/arrays-cpp?view=msvc-170
