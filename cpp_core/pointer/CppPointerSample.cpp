@@ -3,22 +3,6 @@
 
 using namespace std;
 
-// TODO. 指针的创建和销毁, 常量指针的定义
-void testPointers() {
-    int* p = nullptr; // declare pointer and init, not store a random address
-    int i = 5;
-    p = &i;           // assign pointer to address of object
-    int j = *p;       // de-reference p to retrieve the value at its address
-    delete p;         // delete object (please don't forget!)
-
-    const int c = 1;
-    const int* pConst = &c; // declare a non-const pointer to const int
-    const int c2 = 2;
-    pConst = &c2;
-    const int* const pConst2 = &c;
-    // pConst2 = &c2; pConst2 指针为常量，不能再使用另外的内存地址来赋值
-}
-
 // TODO. 指针的四大操作
 int testPointerManipulation() {
     MyClass *pointerMc = new MyClass(1, "name 1"); // Allocate object on the heap
@@ -42,6 +26,25 @@ int testPointerManipulation() {
     return 0;
 }
 
+// TODO. 指针的创建销毁与常量指针
+void testPointers() {
+    string value = "test";
+    string* pValue = &value;
+    cout << &value << pValue << endl;
+
+    int* p = nullptr; // declare pointer and init, not store a random address
+    int i = 5;
+    p = &i;           // assign pointer to address of object
+    int j = *p;       // de-reference p to retrieve the value at its address
+
+    int c = 1;
+    int c2 = 2;
+    int* pConst = &c; // declare a non-const pointer to const int
+    pConst = &c2;
+    int* const pConst2 = &c; // 常量指针不能再指向其他地址
+    // pConst2 = &c2;
+}
+
 // TODO. 指针的移动和遍历
 // 指针在移动时并不为null，会指向随机地址继续输出
 // while (p != nullptr) {
@@ -52,7 +55,7 @@ int main() {
     // Help字符串常量将转字符数组
     // p1指针指向数组的第一个元素的地址
     // p1指针随后递增3个元素，指向最后一个元素p
-    const char* p1 = "Help" + 3;
+    const char* p1 = "Help" + 3; // 设置的值是一个常量值，必须添加const
     cout << *p1 << endl;
 
     string str = "hello";

@@ -1,0 +1,2 @@
+https://en.cppreference.com/w/cpp/language/static
+https://pabloariasal.github.io/2020/01/02/static-variable-initialization/
