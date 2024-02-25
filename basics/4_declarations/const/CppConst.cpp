@@ -1,4 +1,3 @@
-// TODO. C++ const 关键字指定对象或变量不可修改
 
 #define SIZE 10 // C样式编程定义编译时常量值，宏容易出错且难以调试
 constexpr int size = 10; // C++ 优先使用constexpr变量定义编译时常量
@@ -8,8 +7,9 @@ int testConst() {
     constexpr int MeaningOfLife { 42 };
 }
 
+// TODO. const关键字指定对象或变量不可修改
 int main() {
-    // const通知编译器防止程序员对其进行修改
+    // TODO. 常量变量必须与初始值设定项一起声明
     const int i = 5;
 
     // const常量声明数组的大小
