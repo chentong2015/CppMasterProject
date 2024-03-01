@@ -2,13 +2,14 @@
 
 using namespace std;
 
-// CPP支持goto语句跳转到定义的标签
 void test_label(int x) {
     if (x == 1){
         goto label1;
     }
+    // 使用goto跳转到指定的标签
     goto label2;
 
+    // 使用冒号(:)将某种标签与语句隔开
     label1:
     cout << "in label1" << endl;
     return;

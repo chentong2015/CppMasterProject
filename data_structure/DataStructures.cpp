@@ -10,9 +10,6 @@ using namespace std;
 // 2. 使用map(而不是unordered_map)，作为默认关联容器
 // 3. 使用set、multimap和multiset
 int main() {
-    map<string, string> apple_color;
-    apple_color["Granny Smith"] = "Green";
-
     // 推荐直接初始化数据
     std::vector<string> apples {"item1", "item2"};
 

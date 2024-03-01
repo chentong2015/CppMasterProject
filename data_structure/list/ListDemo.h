@@ -9,16 +9,17 @@ class ListDemo {
 
 public:
     static void testList() {
+        // List 直接初始化
+        auto list = {1, 3, 2};
+
         // List for-each循环
         std::list<int> list1 {50, 10, 30, 20, 25, 5};
-
         for(auto item : list1) {
             std::cout << item << " ";
         }
 
-        // 自动排序算法的实现
+        // 自动排序算法的实现 List1.sort(greater<int>());
         list1.sort();
-        // List1.sort(greater<int>());
 
         bool result = std::binary_search(list1.begin(), list1.end(), 10);
         std::cout << result << std::endl;
