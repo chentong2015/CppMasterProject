@@ -33,7 +33,7 @@ int main() {
 
     // TODO. pointer being freed was not allocated
     // 如果指针并没有指向在堆内存上malloc动态分配的(new)对象，则不能使用delete进行释放
-    // delete charInputP;
+    // delete charInputP; 不需要释放该指针
 
     // TODO. input只能调用到它所指向的类型所包含的函数, 无法访问子类的函数
     CharInput* inputP = new NumericInput();

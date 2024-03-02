@@ -44,31 +44,3 @@ void testPointers() {
     int* const pConst2 = &c; // 常量指针不能再指向其他地址
     // pConst2 = &c2;
 }
-
-// TODO. 指针的移动和遍历
-// 指针在移动时并不为null，会指向随机地址继续输出
-// while (p != nullptr) {
-//   cout << *p << endl;
-//   p++;
-// }
-int main() {
-    // Help字符串常量将转字符数组
-    // p1指针指向数组的第一个元素的地址
-    // p1指针随后递增3个元素，指向最后一个元素p
-    const char* p1 = "Help" + 3; // 设置的值是一个常量值，必须添加const
-    cout << *p1 << endl;
-
-    string str = "hello";
-    const char* p2 = str.c_str(); // string to char array
-    for (int index = 0; index < str.size(); index++) {
-        // 指针移动来指向下一个地址，访问下一个数据
-        // cout << *p2 << endl;
-        // p2++;
-
-        // 通过指针坐标偏移来访问下一个数据
-        cout << p2[index] << endl;
-    }
-
-    // p1, p2被没有指向动态内存分配的对象，不能delete释放
-    return 0;
-}

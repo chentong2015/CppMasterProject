@@ -13,8 +13,6 @@ using namespace std::string_literals;
 //    L -> 宽字符文本
 //    u -> UTF-16 字符文本
 //    U -> UTF-32 字符文本
-
-//
 void testChars() {
     // Character literals
     auto c0 =   'A'; // char

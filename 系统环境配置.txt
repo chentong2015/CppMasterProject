@@ -16,7 +16,7 @@ TODO. C++ 如何编译和运行
    - cmake build systems 系统的构建工具
 
 TODO. C++ 开发IDE
-- CLion付费版本 https://www.jetbrains.com/clion/
-- XCode操作繁琐
-- VisualStudio不支持Mac平台C++开发
-- VisualStudioCode需要配置插件环境
+- CLion 付费版本 https://www.jetbrains.com/clion/
+- XCode 操作繁琐, 页面不够直观
+- Visual Studio 不支持Mac平台C++开发
+- Visual Studio Code 配置插件环境 https://code.visualstudio.com/docs/cpp/config-clang-mac
