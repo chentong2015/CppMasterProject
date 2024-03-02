@@ -2,7 +2,8 @@
 #include "MyStruct.h"
 
 int main() {
-    // 初始化结构体类型的集合
+    // 创建结构体类型的数据
+    MyStruct myStruct {"name", 100};
     std::vector<MyStruct> vectorMyStruct;
     vectorMyStruct.push_back({"Norah", 2.7});
     vectorMyStruct.push_back({"Frank", 3.5});

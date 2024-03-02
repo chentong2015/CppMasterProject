@@ -27,3 +27,13 @@ C++ 三种继承
     每种继承只能方法指定“访问性”下的成员
 
 C++ 菱形继承
+
+类型成员访问控制 friend友元函数 ==> 一般用于执行外部的可访问性
+https://learn.microsoft.com/zh-cn/cpp/cpp/friend-cpp?view=msvc-170
+
+TODO. 关于成员函数的特征关键字
+（仅限成员函数）cv 限定符，指定函数是 const 还是 volatile。
+
+（仅限成员函数）virtual、override 或 final。 virtual指定可以在派生类中重写函数。
+override 表示派生类中的函数在重写虚函数。
+final表示函数不能在任何进一步的派生类中进行重写。 有关详细信息，请参阅虚函数。

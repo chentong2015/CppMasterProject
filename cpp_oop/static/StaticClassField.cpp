@@ -5,7 +5,8 @@ using namespace std;
 // TODO. static声明类的数据成员
 // 1. 类的所有实例共享该成员的一个副本，静态成员属于类型本身
 // 2. 声明为const static的整型数据成员可以有初始化表达式
-// TODO. static声明类的成员函数
+
+// TODO. static声明类的成员函数, 函数不与类的任何对象实例关联
 // 1. 指定类的所有实例共享该函数
 // 2. 静态函数没有隐式this指针，static成员函数不能访问实例成员
 class CMyClass {

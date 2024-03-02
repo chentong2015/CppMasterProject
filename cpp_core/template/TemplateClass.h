@@ -3,6 +3,10 @@
 
 #include <iostream>
 
+// TODO. 模板是C++中的泛型编程的基础
+// 1. 类型参数通常使用单个大写字母
+// 2. 在泛型特化时(基于CPP内置类型)，编译器推导出具体类型参数
+
 // 类型参数的数量没有实际限制, 以逗号分隔
 template <class T, class U, class V>
 class MyClass {
@@ -21,8 +25,7 @@ template<typename... Arguments>
 class ArgumentsClass {
 };
 
-// C++ 模板支持非类型参数，也称为值参数
-// 可以提供常量整型值来指定数组的长度
+// C++ 模板支持非类型参数，也称为值参数(提供常量整型值来指定数组的长度)
 template<typename T, size_t L>
 class MyArray {
     T arr[L];

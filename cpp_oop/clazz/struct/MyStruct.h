@@ -4,6 +4,9 @@
 #include <iostream>
 #include <utility>
 
+// TODO. struct 关键字定义结构类型和/或结构类型的变量
+// 将不同的数据类型包装到一个自定义的变量类型中
+
 struct RGB {
     short r;
     short g;
