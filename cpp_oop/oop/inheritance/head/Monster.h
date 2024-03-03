@@ -36,7 +36,7 @@ public:
     // friend 友元函数
     friend std::ostream &operator<<(std::ostream &os, const Monster &monster);
 
-    // 虚函数，由子类实现的函数
+    // 虚函数，可自定义默认的实现并交给子类进行重写
     virtual void testPower();
 };
 

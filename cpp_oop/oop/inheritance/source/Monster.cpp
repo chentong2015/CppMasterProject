@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Monster.h"
+#include "../head/Monster.h"
 
 // TODO. 三种属性赋值的方式(前提是属性具有可访问性)
 // 1. 调用属性初始化函数进行赋值
@@ -43,7 +43,7 @@ std::ostream &operator<<(std::ostream &os, const Monster &monster) {
     return os;
 }
 
-const std::string &Monster::getName() const {
+const std::string& Monster::getName() const {
     return name;
 }
 
@@ -52,6 +52,11 @@ std::string Monster::setName(const std::string &name) {
     auto previousName = Monster::name;
     Monster::name = name;
     return previousName;
+}
+
+// TODO. 父类的虚函数需要提供默认的实现
+void Monster::testPower() {
+    std::cout << "Monster test power" << std::endl;
 }
 
 

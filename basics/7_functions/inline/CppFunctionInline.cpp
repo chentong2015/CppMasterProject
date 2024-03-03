@@ -15,6 +15,7 @@ private:
     double balance;
 };
 
+// inline所实现的方法必须和它声明的方法原型一致
 inline double Account::GetBalance() const {
     return balance;
 }

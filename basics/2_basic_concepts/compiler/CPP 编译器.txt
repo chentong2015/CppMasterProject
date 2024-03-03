@@ -4,9 +4,9 @@ template and types cannot have more than one definition by translation unit.
 ODR 规则的冲突通常显示为链接器错误
 在多个翻译单元中定义同一名称时，将发生链接器错误
 
-TODO. C++ 程序的编译
+TODO. C++ 程序的编译：不同路径下的相关cpp都需要编译，才能成功执行
 编译程序时，每个.cpp文件都会独立编译为一个编译单元(compilation unit)
-编译器完成将每个.cpp文件编译为.obj文件后，会将.obj文件传递给链接器(linker)
+编译器完成将每个.cpp文件编译为.obj文件后会将.obj文件传递给链接器(linker)
 链接器会将所有编译单元合并成单个程序，并验证文件中的声明是否一致
 链接器合并对象文件时，会发现每一个类型定义且不能重复
 

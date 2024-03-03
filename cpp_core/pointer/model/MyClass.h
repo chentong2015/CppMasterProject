@@ -10,6 +10,8 @@ public:
     int num = 0;
     std::string name;
 
+    MyClass() = default;
+
     MyClass(int num, std::string name) : num(num), name(std::move(name)) {}
 
     void setName(const std::string &name) {

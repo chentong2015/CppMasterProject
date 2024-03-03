@@ -1,5 +1,5 @@
 #include <iostream>
-#include "SubMonster.h"
+#include "../head/SubMonster.h"
 
 // 创建对象时必须先调用父类构造器
 SubMonster::SubMonster(int size, int power, const std::string &name) : Monster(size, power, name) {
