@@ -1,16 +1,5 @@
 #include <iostream>
-#include "inheritance/SubMonster.h"
-
-// TODO. 值类型的复制
-class MyRefType {
-private:
-    // Assignment Operator 一个复制赋值运算符
-    MyRefType & operator=(const MyRefType &);
-    // 一个复制构造函数
-    MyRefType(const MyRefType &);
-public:
-    MyRefType () {}
-};
+#include "inheritance/head/SubMonster.h"
 
 int main() {
     auto subMonster1 = new SubMonster(10, 100, "name");

@@ -2,8 +2,8 @@
 // Created by CHEN Tong on 03/01/2022.
 //
 
-#include "Animal.h"
 #include <iostream>
+#include "../head/Animal.h"
 
 using namespace std;
 

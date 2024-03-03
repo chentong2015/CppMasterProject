@@ -37,7 +37,7 @@ public:
     friend std::ostream &operator<<(std::ostream &os, const Monster &monster);
 
     // 虚函数，由子类实现的函数
-    virtual void testPower() = 0;
+    virtual void testPower();
 };
 
 #endif //CPP_MASTER_MONSTER_H

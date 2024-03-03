@@ -1,5 +1,5 @@
-#include "Dog.h"
 #include <iostream>
+#include "../head/Dog.h"
 
 using namespace std;
 

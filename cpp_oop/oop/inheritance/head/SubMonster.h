@@ -9,6 +9,7 @@ public:
     // 必须传递参数个父类构造器
     SubMonster(int size, int power, const std::string &name);
 
+    // TODO. 标记这是一个重写的方法
     void testPower() override;
 
     void lostPower();
