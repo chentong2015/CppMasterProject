@@ -1,6 +1,18 @@
 #include <iostream>
 #include "MyStruct.h"
 
+// 将值封装在结构对象中，从函数返回多个值
+struct S {
+    std::string name;
+    int num;
+};
+
+S g() {
+    std::string t { "hello" };
+    int u { 42 };
+    return { t, u };
+}
+
 int main() {
     // 创建结构体类型的数据
     MyStruct myStruct {"name", 100};

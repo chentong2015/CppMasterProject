@@ -43,7 +43,6 @@ int main() {
 
     int second = findSecondLargestValue(nums, 5);
     std::cout << second << std::endl;
-
     return 0;
 }
 

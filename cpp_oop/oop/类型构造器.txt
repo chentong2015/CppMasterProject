@@ -1,0 +1,2 @@
+TODO. 单参数构造函数必须显式标记explicit以避免无意的隐式转换
+explicit MyClass(const std::string& name);

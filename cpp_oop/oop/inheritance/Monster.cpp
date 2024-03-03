@@ -1,14 +1,13 @@
 #include <iostream>
 #include "Monster.h"
 
-// 构造器直接通过属性方法设置，或者通过this指针设置属性的值
+// TODO. 三种属性赋值的方式(前提是属性具有可访问性)
+// 1. 调用属性初始化函数进行赋值
+// 2. 使用this指针访问属性并赋值
+// 3. 使用类型访问属性并赋值
 Monster::Monster(): size(10) {
 }
 
-// TODO. 三种属性赋值的方式(前提是属性具有可访问性)
-// 1. 直接调用属性初始化函数
-// 2. 使用this指针访问属性并赋值
-// 3. 使用类型访问属性并赋值
 Monster::Monster(const std::string &name) : name(name) {
     this->name = name;
     Monster::name = name;
@@ -18,7 +17,9 @@ Monster::Monster(int size, int power, const std::string &name) : size(size), pow
     std::cout << "Call monster constructor" << std::endl;
 }
 
-Monster::~Monster() = default;
+Monster::~Monster() {
+    std::cout << "Finish";
+};
 
 int Monster::getSize() const {
     return size;

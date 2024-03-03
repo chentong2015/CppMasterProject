@@ -14,13 +14,12 @@ protected:
     int power = 100;
 
 public:
-    // Constructor 默认构造器和自定义的构造器
+    // Constructor 默认构造器，特殊成员函数
     Monster();
-    // TODO. 单参数构造函数必须显式标记explicit以避免无意的隐式转换
     explicit Monster(const std::string &name);
     Monster(int size, int power, const std::string &name);
 
-    // Destructor
+    // Destructor 析构函数，特殊成员函数
     virtual ~Monster();
 
     // Getter and Setter
