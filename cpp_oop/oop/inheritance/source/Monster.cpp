@@ -21,12 +21,24 @@ Monster::~Monster() {
     std::cout << "Finish";
 };
 
+
 int Monster::getSize() const {
     return size;
 }
 
-void Monster::setSize(int size) {
-    Monster::size = size;
+void Monster::setSize(int s) {
+    Monster::size = s;
+}
+
+const std::string& Monster::getName() const {
+    return name;
+}
+
+// 修改名称时返回之前的旧值
+std::string Monster::setName(const std::string &n) {
+    auto previousName = Monster::name;
+    Monster::name = n;
+    return previousName;
 }
 
 // 基于size属性的"=="比较器实现，属性在构造器中必须具有初始化值
@@ -41,17 +53,6 @@ bool Monster::operator!=(const Monster &rhs) const {
 std::ostream &operator<<(std::ostream &os, const Monster &monster) {
     os << "size: " << monster.size;
     return os;
-}
-
-const std::string& Monster::getName() const {
-    return name;
-}
-
-// 修改名称时返回之前的旧值
-std::string Monster::setName(const std::string &name) {
-    auto previousName = Monster::name;
-    Monster::name = name;
-    return previousName;
 }
 
 // TODO. 父类的虚函数需要提供默认的实现

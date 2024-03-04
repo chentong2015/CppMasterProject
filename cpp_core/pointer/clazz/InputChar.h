@@ -5,11 +5,11 @@ class CharInput {
 public:
 	std::string character = "test";
 
-    void add(char c) {
+    virtual void add(char c) {
 		character += c;
 	}
 
-	std::string getValue() {
+	inline std::string getValue() const {
 		return character;
 	}
 };

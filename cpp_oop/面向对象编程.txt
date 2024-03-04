@@ -12,6 +12,7 @@ Constructors(构造函数)和destructors(析构函数)不能声明为const或vol
 
 -------------------------------------------------------------
 C++ 析构器的实现，类型的销毁
+    类型的析构函数什么时候被调用 ？注意析构函数中指针的删除 ？
 
 C++ virtual 虚函数, 是否需要声明 ？
     不添加virtual是否也能够重写 ？
@@ -26,10 +27,31 @@ C++ 三种继承
     默认情况是什么继承 ? private ?
     每种继承只能方法指定“访问性”下的成员
 
-C++ 菱形继承
+C++ 菱形继承的特征，有何问题，如何预防 ？
+      A
+     B C
+      D
 
 类型成员访问控制 friend友元函数 ==> 一般用于执行外部的可访问性
 https://learn.microsoft.com/zh-cn/cpp/cpp/friend-cpp?view=msvc-170
+
+struct Vec3 {
+public:
+    int x;
+    int y;
+    int z;
+
+    Vec3(int x = 0, int y = 0, int z = 0): x(x), y(y), z(z) {}
+
+// 友元函数的作用 操作符合的重载
+    friend std::ostream& operator<<(std::ostream& os, const Vec3& v) {
+        return os << "{ x=" << v.x << ", y=" << v.y << ", z=" << v.z << " }";
+    }
+};
+
+
+
+
 
 TODO. 关于成员函数的特征关键字
 （仅限成员函数）cv 限定符，指定函数是 const 还是 volatile。

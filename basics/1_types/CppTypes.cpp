@@ -1,6 +1,7 @@
+
 constexpr int MAXIMUM_ERROR_THRESHOLD = 100;
 
-// TODO. C++文本主要有六个类别: 整数、浮点、布尔和指针、字符和字符串
+// TODO. C++六种文本类别: 整数、浮点、布尔和指针、字符和字符串
 int main(int num) {
     // 整数文本
     int i = 157;         // 首字母非0则表示十进制整型文本
@@ -32,7 +33,8 @@ int main(int num) {
     auto y = 0b000001 ; // int
 
     // 魔术常量: 使用指定常量命令来替换
-    if (num < MAXIMUM_ERROR_THRESHOLD)
+    if (num < MAXIMUM_ERROR_THRESHOLD) {
         return 0;
+    }
     return 1;
 }

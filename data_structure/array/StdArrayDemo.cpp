@@ -5,7 +5,8 @@
 
 // std提供的数组结构体: 提供数据类型和数组长度
 // template <class _Tp, size_t _Size>
-// struct array {}
+// struct array {
+// }
 int main() {
     std::array<int, 3> a2 = {1, 2, 3};
     std::sort(a2.begin(), a2.end());

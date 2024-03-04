@@ -1,6 +1,5 @@
 #include <iostream>
 #include <map>
-
 #include "vector/VectorHelper.h"
 
 using namespace std;

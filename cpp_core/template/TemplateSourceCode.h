@@ -20,6 +20,15 @@ bool any_of(_InputIterator __first, _InputIterator __last, _Predicate __pred) {
     return false;
 }
 
+// TODO. 自定义值交换的模版函数，交换完成后返回旧值
+template<class _T1, class _T2 = _T1>
+inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX20
+_T1 exchange(_T1& __obj, _T2&& __new_value) {
+    _T1 __old_value = _VSTD::move(__obj);
+    __obj = _VSTD::forward<_T2>(__new_value);
+    return __old_value;
+}
+
 // 声明泛型方法特定的返回值
 template <size_t _Ip, class ..._Tp>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX14

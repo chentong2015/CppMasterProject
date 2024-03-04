@@ -6,7 +6,6 @@ void testStringToCharArray() {
     std::string* strPointer = &str; // 字符串指针指向某字符串地址
 
     char* p1 = str.data();   // 取字符串的data数据，返回字符类型的指针
-
     // TODO. 指针在遍历所有字符后，会继续移动到一个Random地址
     //  不能判断nullptr空指针，除非遍历的末尾被确定成nullptr
     // while (p != nullptr) {
@@ -17,6 +16,7 @@ void testStringToCharArray() {
         std::cout <<  *p1 << std::endl;
         p1++;
     }
+
     std::string str2 = "hello";
     const char* p2 = str2.c_str(); // 等效于返回data(), 首字符的地址
     for (int index = 0; index < str2.size(); index++) {

@@ -25,8 +25,8 @@ template<typename... Arguments>
 class ArgumentsClass {
 };
 
-// C++ 模板支持非类型参数，也称为值参数(提供常量整型值来指定数组的长度)
-template<typename T, size_t L>
+// TODO. 模板支持使用非类型参数，也称为值参数
+template<typename T, size_t S, int L>
 class MyArray {
     T arr[L];
 public:

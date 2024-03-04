@@ -1,0 +1,15 @@
+
+struct Vec3 {
+public:
+    int x;
+    int y;
+    int z;
+
+    Vec3(int x = 0, int y = 0, int z = 0): x(x), y(y), z(z) {}
+
+// 重写<<左移操作符
+// 相当于定义了一个toString的output输出流
+    std::ostream& operator<<(std::ostream& os, const Vec3& v) {
+        return os << "{ x=" << v.x << ", y=" << v.y << ", z=" << v.z << " }";
+    }
+};

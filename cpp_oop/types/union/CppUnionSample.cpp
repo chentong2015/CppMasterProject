@@ -24,6 +24,7 @@ struct WindData {
 // Union的使用：通过类型标识来划分Struct中存储的数据
 struct Input {
     WeatherDataType type;
+    // Anonymous union 匿名联合类型
     union {
         TempData temp;
         WindData wind;

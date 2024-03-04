@@ -5,8 +5,11 @@
 #include <stdio.h>
 
 int main() {
-    char szbuf[] = "1234";
+    // 标准Output Stream 输出流
+    std::ostream& output = std::cout;
+    output.operator<<("value");
 
-    printf("\nBefore trim: %s", szbuf);
+    char text[] = "1234";
+    printf("\n String: %s", text);
 }
 

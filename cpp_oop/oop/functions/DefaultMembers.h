@@ -9,12 +9,14 @@
 class SuperClass {
     std::string value;
     SuperClass() = default;
+
+    // 使用默认的析构器的实现
+    ~SuperClass() = default;
 };
 
 // 一旦声明了默认实现，则不能再对其自动义修改
-SuperClass::SuperClass() {
-    std::cout << "constructor";
-}
+// SuperClass::SuperClass() {
+// }
 
 class SubClass: public SuperClass {
     // 从基类派生的类无法自动生成它自己的默认构造函数

@@ -22,11 +22,12 @@ public:
     // Destructor 析构函数，特殊成员函数
     virtual ~Monster();
 
+    // TODO. setter函数的参数名称避免和属性的名称一致
     // Getter and Setter
-    int getSize() const; // 声明函数返回的类型为常量
-    void setSize(int size);
+    int getSize() const;  // 声明函数返回的类型为常量
+    void setSize(int s);
     const std::string &getName() const; // 声明参数和返回类型均为常量
-    std::string setName(const std::string &name);
+    std::string setName(const std::string &n);
 
     // Equality Operator 定义类型相等比较器
     bool operator==(const Monster &rhs) const;
