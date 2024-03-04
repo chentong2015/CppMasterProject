@@ -12,7 +12,6 @@ struct B : A {
         printf("in B \n");
     }
 
-    // TODO. 普通函数，没有多态性
     void test2() {
         printf("test2 in B \n");
     }
@@ -23,7 +22,6 @@ struct C : B {
         printf("in C \n");
     }
 
-    // 相当于覆盖父类所定义的普通函数
     void test2() {
         printf("test2 in C \n");
     }

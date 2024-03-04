@@ -1,20 +1,7 @@
 #include <iostream>
 #include "../instanceof/InstanceOf.h"
 
-// TODO. dynamic_cast 用于多态类型的转换
-// dynamic_cast<TargetType>(castValue) 转换的值必须据具有多态性
-
-// 1. 向上转换：子类向父类的强制转换
-class B { };
-class C : public B { };
-class D : public C { };
-
-void f(D* pd) {
-    C* pc = dynamic_cast<C*>(pd);   // ok: C is a direct base class
-    B* pb = dynamic_cast<B*>(pd);   // ok: B is an indirect base class
-}
-
-// 2. 向下转换: 从给定类移至从中派生的类，可能造成问题
+// TODO. Dynamic向下转换：从给定类移至从中派生的类，可能造成问题
 class BClass {
 public:
     virtual void print() {
@@ -27,6 +14,7 @@ public:
     void print() override {
         std::cout << "DClass print \n";
     }
+
     void test() const {
         std::cout << "test \n";
     };
@@ -57,3 +45,5 @@ int main() {
 
     return 0;
 }
+
+

@@ -11,6 +11,7 @@ private:
 Date::Date(int mn): month(mn) {}
 
 // TODO. const成员函数，只读函数不能修改成员属性
+// 除非使用const_cast运算符强制转换后修改
 int Date::getMonth() const {
     return month;
 }

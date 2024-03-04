@@ -26,6 +26,7 @@ void testPointerCreation() {
 void testPointerManipulation() {
     auto pointerMc = new MyClass(1, "name 1"); // Allocate object on the heap
     pointerMc->print();                 // 1. Access class member
+    (*pointerMc).print();               // 拿到指针所指向对象，通过实例调用方法
 
     MyClass* pointerMc2 = pointerMc;    // 2. Copy the pointer 两个指针指向同一个对象
     pointerMc2->setName("name 2");      // 通过指针修改的也是同一个对象

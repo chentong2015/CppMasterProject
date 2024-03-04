@@ -28,7 +28,7 @@ public:
         std::cout << "other class" << std::endl;
     }
 
-    // 覆盖父类的普通函数
+    // 相当于覆盖父类的普通函数
     void testNoVirtual() {
         std::cout << "other no virtual" << std::endl;
     }

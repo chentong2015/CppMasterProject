@@ -7,6 +7,7 @@ int main() {
     Parent p;
     Child c;
     OtherClass a;
+
     Parent *parentP = &p;
     Child *childP = &c;
     OtherClass *otherP = &a;

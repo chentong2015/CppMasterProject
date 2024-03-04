@@ -1,0 +1,7 @@
+TODO. dynamic_cast<type-id>(expression) 强转表达式
+1. dynamic_cast只适用于指针或引用
+2. 一个空指针值通过dynamic_cast转换为目标类型的空指针值
+3. 如果expression无法安全地转换为type-id类型，运行时检查将导致强制转换失败
+
+TODO. dynamic_cast转换相对安全
+dynamic_cast会执行运行时类型检查，提高类型转换的安全性

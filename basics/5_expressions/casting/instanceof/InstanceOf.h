@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-// TODO. 如何判断一个对象是否是每个特定类型的实例
+// TODO. 如何判断一个对象是否是每个特定类型的实例 ？
 // Check one object is an instance of some class type or not
 // 使用dynamic_cast<>()进行动态转换来判断对象是否属于特定类型
 
