@@ -1,21 +1,19 @@
 #include <iostream>
 #include "MyStruct.h"
 
-// 将值封装在结构对象中，从函数返回多个值
-struct S {
-    std::string name;
-    int num;
+struct MyS {
+    int myInt;
+    char myChar;
 };
 
-S g() {
-    std::string t { "hello" };
-    int u { 42 };
-    return { t, u };
-}
-
 int main() {
-    // 创建结构体类型的数据
-    MyStruct myStruct {"name", 100};
+    // 结构体可以任意执行数据进行初始化，未初始化则使用默认值
+    MyS ms1{ 'a' };               // myInt = 97, myChar = '\0'
+    MyS ms2{ 1 };                 // myInt = 1, myChar = '\0'
+    MyS ms3{};                          // myInt = 0, myChar = '\0'
+    MyS ms4{1, 'a'};      // myInt = 1, myChar = 'a'
+    MyS ms5 = { 2, 'b' }; // myInt = 2, myChar = 'b'
+
     std::vector<MyStruct> vectorMyStruct;
     vectorMyStruct.push_back({"Norah", 2.7});
     vectorMyStruct.push_back({"Frank", 3.5});

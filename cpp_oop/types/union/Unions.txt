@@ -1,2 +1,0 @@
-Union联合类型的初始化
-https://learn.microsoft.com/zh-cn/cpp/cpp/initializers?view=msvc-170#initializing-unions-and-structs

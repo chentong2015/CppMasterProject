@@ -4,12 +4,6 @@
 
 using namespace std;
 
-// CPP 支持Tuple元祖类型: 模版类型，包含任意数量不同类型的数据
-//
-// template <class ..._Tp>
-// class _LIBCPP_TEMPLATE_VIS tuple {
-// }
-
 tuple<int, string, double> f() {
     int i { 108 };
     string s { "Some text" };
