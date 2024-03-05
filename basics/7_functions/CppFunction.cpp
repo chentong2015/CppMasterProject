@@ -11,7 +11,8 @@ void testConstParameter(const int value) {
     std::cout << value + 10;
 }
 
-// constexpr 指示函数的返回值是常量值，可以在编译时进行计算
+// constexpr 常量表达式的声明
+// 指示函数的返回值是常量值，可以在编译时进行计算
 constexpr float exp(float x, int n) {
     return n == 0 ? 1 :
            n % 2 == 0 ? exp(x * x, n / 2) :

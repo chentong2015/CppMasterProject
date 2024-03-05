@@ -1,0 +1,4 @@
+Void类型：特殊类型
+- 不能声明void类型的变量，但可声明void*类型的变量(指向void的指针)
+- void常用来表示函数不返回值 void function() {}
+- void不能做为没有参数的函数参数 function(void) {}

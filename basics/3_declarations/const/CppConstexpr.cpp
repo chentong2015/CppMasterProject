@@ -1,12 +1,14 @@
 // C++ constexpr 常数表达式
-// 1. 可以应用于函数和类 constructor(构造函数)
-// 2. constexpr指示值或返回值是 constant(常数)
+// 1. 可以应用于函数和类constructor(构造函数)
+// 2. constexpr指示值或返回值是constant(常数)
 
 // TODO. constexpr 函数
 //  - constexpr 函数必须只接受并返回文本类型(在编译时能够确定的类型)
 //  - constexpr 函数可以是递归的
 //  - 主体可以定义为 = default 或 = delete
 //  - 正文不能包含如何 goto 语句或 try 块
+constexpr int MeaningValue { 42 };
+
 constexpr float exp(float x, int n) {
     if (n == 0) {
         return 1;

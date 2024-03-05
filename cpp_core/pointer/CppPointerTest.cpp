@@ -7,11 +7,6 @@ using namespace std;
 // - string *p;
 // - string * p;
 int main() {
-    string value = "test";
-    string* pValue = &value;
-    cout << *pValue << endl; // test 取指针指向的地址的值
-    cout << pValue << endl;  // 0x16d8cb5e0 指针的值是指向的64bits内存地址
-
     int* p = nullptr; // declare pointer and init, not store a random address
     int i = 5;
     p = &i;           // assign pointer to address of object
@@ -23,4 +18,12 @@ int main() {
     pConst = &c2;
     int* const pConst2 = &c; // 常量指针不能再指向其他地址
     // pConst2 = &c2;
+
+    char this_char {'a'};
+    char* myBuf = &this_char;
+
+    string value = "test";
+    string* pValue = &value;
+    cout << *pValue << endl; // test 取指针指向的地址的值
+    cout << pValue << endl;  // 0x16d8cb5e0 指针的值是指向的64bits内存地址
 }

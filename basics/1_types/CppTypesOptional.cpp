@@ -20,7 +20,7 @@ int main() {
     std::optional<int> v1;
     std::optional<int> v2(3);
     v1.has_value(); // false
-    if (v2) {
+    if (v2.has_value()) {
         std::cout << "v2 = " + std::to_string(v2.value()) << '\n';
     }
 

@@ -7,17 +7,6 @@
 // 3. static_cast完全依赖于转换语句提供的信息，因此可能不安全
 typedef unsigned char BYTE;
 
-void testCast() {
-    char ch;
-    int i = 65;
-    float f = 2.5;
-    double dbl;
-
-    ch = static_cast<char>(i);    // int to char
-    dbl = static_cast<double>(f); // float to double
-    i = static_cast<BYTE>(ch);
-}
-
 class B {
 public:
     virtual void test() {};
@@ -45,7 +34,20 @@ void castStatic(B* pb, D* pd) {
 }
 
 int main() {
+    int i = 65;
+    float f = 2.5;
+    char ch = static_cast<char>(i);     // int to char
+    double dbl = static_cast<double>(f); // float to double
+    i = static_cast<BYTE>(ch);
+
+    long val_2 = 0x7FFFFFL;
+    int k = static_cast<int>(val_2); // long to int
+    std::cout << k;
+
     B* pb = new B();
     D* pd = new D();
     castStatic(pb, pd);
+    delete pb;
+    delete pd;
+    return 0;
 }

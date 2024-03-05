@@ -1,6 +1,6 @@
 
 // C++ 能够指定内存中对象的精确对齐方式
-// - bool 和 char 在 1 字节边界上对齐
+// - bool 和 char 在  1字节边界上对齐
 // - short 在 2 字节边界上对齐
 // - int、long 和 float 在 4 字节边界上对齐
 // - long long、double 和 long double 在 8 字节边界上对齐
@@ -14,4 +14,6 @@ int main() {
 
     short c;          // 2 bytes
     int b;            // 4 bytes
+
+
 }

@@ -27,7 +27,8 @@ public:
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
-    // std::exchange(oldValue, newValue) 默认实现
+    // TODO. 调用标准库方法的实现
+    // std::exchange(oldValue, newValue)
     void switchValue(int* p, int sourceIndex, int targetIndex) {
         int tempValue = p[sourceIndex];
         p[sourceIndex] = p[targetIndex];
