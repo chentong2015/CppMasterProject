@@ -1,0 +1,11 @@
+TODO. C++ string 字符串的存储结构
+ - C++会在存储串的数组末尾添加的null标识符('\0')作为结束标识符
+ - sizeof统计字符串数组的存储空间时会多出一个字节的大小
+
+推荐使用标准库类型std::string和std::wstring
+- 几乎可以消除与C样式字符串关联的所有错误
+- 利用成员函数的优势进行搜索、追加和在前面追加等
+
+TODO. 添加s结尾表示指定使用std::string类型，而非char*
+char* ptr = "value";
+std::string str = "value"s;

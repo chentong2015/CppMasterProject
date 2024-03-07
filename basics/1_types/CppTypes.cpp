@@ -1,7 +1,8 @@
 
 constexpr int MAXIMUM_ERROR_THRESHOLD = 100;
 
-// TODO. C++六种文本类别: 整数、浮点、布尔和指针、字符和字符串
+// C++六种文本类别: 整数、浮点、布尔和指针、字符和字符串
+// 推荐在声明变量时对其进行初始化
 int main(int num) {
     // 整数文本
     int i = 157;         // 首字母非0则表示十进制整型文本

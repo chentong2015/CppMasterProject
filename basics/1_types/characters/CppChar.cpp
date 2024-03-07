@@ -2,46 +2,43 @@
 
 using namespace std;
 
-// 使用char*指针来指向不同编码的字符串序列
-void charPointerString() {
-    // String literals
-    auto s0 =   "hello"; // const char*
-    auto s1 = u8"hello"; // const char* before C++20, encoded as UTF-8
-    // const char8_t* in C++20
-    auto s2 =  L"hello"; // const wchar_t*
-    auto s3 =  u"hello"; // const char16_t*, encoded as UTF-16
-    auto s4 =  U"hello"; // const char32_t*, encoded as UTF-32
-    cout << s0 << endl;
-
-    // Raw string literals containing unescaped \ and "
-    auto R0 =   R"("Hello \ world")"; // const char*
-    auto R1 = u8R"("Hello \ world")"; // const char* before C++20, encoded as UTF-8
-    // const char8_t* in C++20
-    auto R2 =  LR"("Hello \ world")"; // const wchar_t*
-    auto R3 =  uR"("Hello \ world")"; // const char16_t*, encoded as UTF-16
-    auto R4 =  UR"("Hello \ world")"; // const char32_t*, encoded as UTF-32
-}
-
-
-
+// 不同编码格式的字符字面值(Character literals)
+// u8 -> UTF-8 字符文本
+// L  -> 宽字符文本
+// u  -> UTF-16 字符文本
+// U  -> UTF-32 字符文本
 int main() {
-    char a {'1'};
-
     auto c0 =   'A'; // char
     auto c1 = u8'A'; // char
     auto c2 =  L'A'; // wchar_t
     auto c3 =  u'A'; // char16_t
     auto c4 =  U'A'; // char32_t
+    cout << c1 + c3 << endl;
 
     // 不同的编码格式对应不同的长度的编码字节数
     cout << sizeof(c1) << endl; // 1 byte
     cout << sizeof(c3) << endl; // 2 bytes
     cout << sizeof(c4) << endl; // 4 bytes
 
-    // 直接初始化单个字符
-    char this_char {'a'};
-    int position = this_char + 1;
-    cout << this_char + 2 << endl; //
+    // 直接初始化单个字符，对字符运算转换成ASCII对应的整数
+    char c {'a'};
+    int i = c + 1;
+    cout << i << endl; // 98
 
     return 0;
+}
+
+// 注意使用特殊的转译字符
+void testEscapeSequences() {
+    char newline = '\n';    // 换行符
+    char tab = '\t';        // 水平制表符
+    char backspace = '\b';  // 退格符
+    char backslash = '\\';  // 反斜杠
+    char nullChar = '\0';   // null字符，作为字符串存储的默认结尾
+
+    cout << "Newline character: " << newline << "ending" << endl;
+    cout << "Tab character: " << tab << "ending" << endl;
+    cout << "Backspace character: " << backspace << "ending" << endl;
+    cout << "Backslash character: " << backslash << "ending" << endl;
+    cout << "Null character: " << nullChar << "ending" << endl;
 }
