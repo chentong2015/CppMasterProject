@@ -13,7 +13,7 @@ void testByValue(std::string input){
     input = "new test 1";
 }
 
-// 通过向参数添加引用限定符，使自变量通过引用进行传递
+// 通过向参数添加'&'引用限定符，使自变量通过引用进行传递
 // 当函数修改通过引用传递的参数时，它会修改原始对象，而不是本地副本
 void testByLeftValueRef(std::string& input){
     input = "new test 2";

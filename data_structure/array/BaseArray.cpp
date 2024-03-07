@@ -1,13 +1,8 @@
 #include <iostream>
 
-// 将数组的首元素地址作为函数的第一参数
-void printDoubleArray(double* p, const size_t len) {
-    std::cout << "process: \n";
-    for (size_t i = 0; i < len; ++i) {
-       std::cout << p[i] << std::endl;
-    }
-}
+// 传统的C样式数组是许多bug的根源, 尤其在旧代码中仍然常用
 
+// Array数组必须存储相同数据类型的数据
 int main() {
     // 指针指向新分配的数组的首元素地址
     int* pNums = new int[10];

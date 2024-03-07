@@ -23,6 +23,5 @@ int main() {
     if (auto it = m.find(10); it != m.end()) {
         cout << it->second << "\n";
     }
-
     return 0;
 }

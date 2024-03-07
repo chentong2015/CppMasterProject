@@ -22,7 +22,7 @@ void charPointerString() {
 
 // TODO. 由于C++字符串的存储结构，使字符数组的存储多出一个字节的长度
 int main() {
-    char charArray[] = "12345";
+    char charArray[] = "12345"; // "12345\0"
     charArray[0] = 'a';
     std::cout << charArray << std::endl; // "a2345" 输出字符数组的值
     std::cout << strlen(charArray) << std::endl; // 5 chars 统计字符数组的字符长度
@@ -32,7 +32,13 @@ int main() {
         std::cout << charArray[i] << std::endl;
     }
 
-    char chars[] = "hello";
+    char chars[] = "hello"; // "hello\0"
+    int i = 0;
+    while( chars[i] != '\0'){
+        printf("%c ", chars[i]);
+        i++;
+    }
+
     char chars1[] = { 'H', 'e', 'l', 'l', 'o', '\0' };
     for (char c: chars1) {
         std::cout << c << std::endl;

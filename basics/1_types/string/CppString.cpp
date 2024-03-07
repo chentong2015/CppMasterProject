@@ -28,8 +28,13 @@ void stringDeclaration() {
 }
 
 int main() {
-    // 获取字符串包含的字符数量(不包括字符串结尾标识符)
+    // 直接遍历字符串的字符
     std::string value = "test";
+    for (char c: value) {
+        std::cout << c << std::endl;
+    }
+
+    // 获取字符串包含的字符数量(不包括字符串结尾标识符)
     std::cout << value.size() << std::endl;   // 4 chars
     std::cout << value.length() << std::endl; // 4 chars
 

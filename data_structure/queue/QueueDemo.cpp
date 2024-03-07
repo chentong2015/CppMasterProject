@@ -12,4 +12,6 @@ int main() {
         // 弹出队列的第一个数据，无返回
         inputs.pop();
     }
+
+    return 0;
 }
