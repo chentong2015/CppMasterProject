@@ -9,7 +9,14 @@ int main() {
     std::ostream& output = std::cout;
     output.operator<<("value");
 
+    // printf() 类似于C语言风格的格式化输出
     char text[] = "1234";
     printf("\n String: %s", text);
+
+
+    // Input 从控制台获取数据
+    std::string str;
+    std::cout << "Enter the string: \n";
+    std::cin >> str;
 }
 

@@ -12,6 +12,7 @@ template <class T, class U, class V>
 class MyClass {
 };
 
+// 关键字typename表示此参数是类型的占位符
 template <typename T, typename U, typename V>
 class TemplateClass {
 public:
