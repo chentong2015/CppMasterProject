@@ -8,7 +8,11 @@ public:
     Vec3(int x = 0, int y = 0, int z = 0): x(x), y(y), z(z) {}
 
 // 重写<<左移操作符
-// 相当于定义了一个toString的output输出流
+// 相当于定义了一个toString()的output输出流
+
+// 只有重写该操作符号，才能直接在输出类型的实例对象
+// std::cout << instance
+
     std::ostream& operator<<(std::ostream& os, const Vec3& v) {
         return os << "{ x=" << v.x << ", y=" << v.y << ", z=" << v.z << " }";
     }

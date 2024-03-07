@@ -1,6 +1,6 @@
 #include <iostream>
 
-// TODO. 遍历string字符的两种方式: 通过字符指针逐个遍历字符数组
+// TODO. 通过字符指针逐个遍历字符串(字符数组)
 void loopStringChars() {
     std::string str = "value";
 
