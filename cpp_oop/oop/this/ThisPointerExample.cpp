@@ -27,7 +27,8 @@ Buf::Buf(char* szBuffer, size_t sizeOfBuffer) {
 
 // TODO. 自定义同类型对象的赋值操作，this指针用于防止自引用
 Buf& Buf::operator=(const Buf &otherbuf) {
-    if(&otherbuf != this){
+    // 判断this指针所指向的地址不是参数对象的地址
+    if(this != &otherbuf){
         if (buffer) {
             delete [] buffer;
         }

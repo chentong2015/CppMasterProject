@@ -33,8 +33,7 @@ public:
     bool operator==(const Monster &rhs) const;
     bool operator!=(const Monster &rhs) const;
 
-    // Stream Output Operator
-    // friend 友元函数
+    // Stream Output Operator 类型的输出流操作符
     friend std::ostream &operator<<(std::ostream &os, const Monster &monster);
 
     // 虚函数，可自定义默认的实现并交给子类进行重写

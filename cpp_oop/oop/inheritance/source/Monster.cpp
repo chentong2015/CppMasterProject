@@ -50,6 +50,7 @@ bool Monster::operator!=(const Monster &rhs) const {
     return !(rhs == *this);
 }
 
+// 等效于实现类型的输出格式Output Stream
 std::ostream &operator<<(std::ostream &os, const Monster &monster) {
     os << "size: " << monster.size;
     return os;

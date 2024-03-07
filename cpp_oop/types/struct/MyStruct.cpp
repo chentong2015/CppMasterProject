@@ -1,24 +1,23 @@
 #include <iostream>
 
-struct RGB {
-    short r;
-    short g;
-    short b;
-    int v  ;
-};
-
 struct MyS {
     int myInt;
     char myChar;
 };
 
+// 结构体的构造器形式被废弃
 struct MyStruct {
     std::string name;
     float amount;
-
-    // 结构体的构造器形式被废弃
     // Following constructor is no longer needed since C++20.
     MyStruct(std::string name, float amount) : name(std::move(name)), amount(amount) {}
+};
+
+// TODO. 泛型结构体，在使用该结构体类型时必须提供特化类型和size
+template <class Tp, size_t size>
+struct MyArrayStruct {
+
+    Tp elems[size];
 };
 
 int main() {
@@ -32,4 +31,6 @@ int main() {
     std::vector<MyStruct> vectorMyStruct;
     vectorMyStruct.push_back({"Norah", 2.7});
     vectorMyStruct.push_back({"Frank", 3.5});
+
+    MyArrayStruct<int, 10> myArrayStruct;
 }
