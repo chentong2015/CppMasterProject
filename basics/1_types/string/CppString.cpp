@@ -28,7 +28,9 @@ void stringDeclaration() {
 }
 
 int main() {
-    // 直接遍历字符串的字符
+    // TODO. nullptr构造字符串是未定义的行为，会导致异常
+    std::string str = nullptr;
+
     std::string value = "test";
     for (char c: value) {
         std::cout << c << std::endl;
@@ -40,6 +42,7 @@ int main() {
 
     // 字符串相关的API操作
     value.append("last");
+    std::reverse(value.begin(), value.end());
     std::sort(value.begin(), value.end());
     std::cout << value << std::endl;
 

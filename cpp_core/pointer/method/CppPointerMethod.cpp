@@ -2,33 +2,64 @@
 
 class DemoClass {
 public:
-    int num;
-    std::string name;
+    const std::string& getName() const {
+        return name;
+    }
 
     void setName(std::string& n) {
        this->name = n;
     }
+private:
+    std::string name;
 };
 
-// Accepts a MyClass object 传递一个复制的对象，通过*pointer传递
-// This statement modifies only the local copy of mc.
-void func_C(DemoClass mc) {
-    // 使用"."操作符访问对象属性
-    mc.num = 21;
+// 传递一个复制的对象，直接传递对象的副本，方法只能修改副本
+void testCopyObject(DemoClass demoClass) {
+   std::string value = "testCopyObject";
+   demoClass.setName(value);
+}
+
+// TODO. 优先考虑传递const引用
+// const引用是将对象传递给函数的首选方式，除非对象值可能为nullptr
+void testCopyAddress(const DemoClass& demoClass) {
+    std::string value = "testCopyAddress";
+    demoClass.getName();
 }
 
 // TODO. 复制对象的地址通常比复制整个对象更加高效
-// Accepts a MyClass pointer
 // All copies of the pointer will point to the same modified object.
-void func_A(DemoClass* pDc) {
-    // 使用指针访问对象属性
-    pDc->num = 3;
-    std::string value = "new name";
+void testCopyReference(DemoClass* pDc) {
+    std::string value = "testCopyReference";
     pDc->setName(value);
 }
 
-// TODO. 将传递对象地址的副本设置成const，避免对象被函数修改
-void func_B(const DemoClass* pDc) {
-    // pDc->setName(); 无法调用setter函数
-    std::cout << pDc->name;
+// TODO. 除非希望函数修改对象，否则请将指针参数指定为const
+// 等效于传递const this指针，该方法不能修改传递的对象，也无法调用不是const的成员函数
+void testCopyConstReference(const DemoClass* pDc)  {
+    // 表明所调用的方法都必须是const的
+    std::cout << pDc->getName() << std::endl;
+
+    // 但指针并未标记常量，可以修改其指向的地址
+    pDc = new DemoClass();
+    delete pDc;
+}
+
+int main() {
+    std::string str = "name 1";
+    DemoClass demoClass;
+    demoClass.setName(str);
+    std::cout << demoClass.getName() << std::endl;
+
+    testCopyObject(demoClass);
+    std::cout << demoClass.getName() << std::endl;
+
+    // 以下两种方式都将修改原始对象
+    testCopyAddress(demoClass);
+    std::cout << demoClass.getName() << std::endl;
+    testCopyReference(&demoClass);
+    std::cout << demoClass.getName() << std::endl;
+
+    testCopyConstReference(&demoClass);
+
+    return 0;
 }

@@ -2,7 +2,7 @@
 
 void testAutoBasicTypes() {
     // TODO. 推荐使用auto类型推导，避免类型名称重复
-    auto name = "LA"; // Declare a variable and let compiler deduce the type.
+    auto name = "char"; // Declare a variable and let compiler deduce the type.
 
     // 必须提供初始化的数据才能由编译器进行推导(C++ 11)
     // auto address;             // Error. Compiler cannot deduce a type without an init value.

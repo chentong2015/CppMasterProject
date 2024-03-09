@@ -11,11 +11,8 @@ public:
 
     // TODO. 标记这是一个重写的方法
     void testPower() override;
-
     void lostPower();
-
     int getIncrement() const;
-
     void makeNoise();
 };
 

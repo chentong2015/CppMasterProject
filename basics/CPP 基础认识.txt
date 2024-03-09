@@ -8,6 +8,4 @@ C++ 基本类型没有Wrapper类型
 C++ 不存在通用基类型Object，其他类型并不默认继承自此类型
 C++ 与托管语言不同，并不支持自动回收垃圾
 
-C++ 语言定义文档
-https://learn.microsoft.com/zh-cn/cpp/ & en-us
-https://learn.microsoft.com/zh-cn/windows/win32/learnwin32/learn-to-program-for-windows
+https://learn.microsoft.com/zh-cn/cpp/

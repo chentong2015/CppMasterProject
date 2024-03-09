@@ -13,8 +13,10 @@ class CMyClass {
 public:
     // 普通成员属性可以直接初始化
     int id = 10;
+
     // 非"常量静态"成员不能直接初始化
     static int numStatic;
+
     // "常量静态"成员才能直接初始化
     const static int value = 10;
 

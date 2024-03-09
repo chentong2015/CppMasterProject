@@ -16,7 +16,7 @@ int main() {
 
     // Input 从控制台获取数据
     std::string str;
-    std::cout << "Enter the string: \n";
-    std::cin >> str;
+    std::cout << "Enter the string: \n"; // << 左移操作符输出
+    std::cin >> str;  // >> 右移操作符输入
 }
 

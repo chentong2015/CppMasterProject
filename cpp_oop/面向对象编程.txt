@@ -1,5 +1,4 @@
-TODO. CPP 面向对象编程
-一切均为class，应该将函数封装到类中而非单独定义在文件中
+
 
 TODO. nullptr 只能设置给指针变量，null不能设置给对象
 - CPP类型的对象无法被设置成Null，可将指向对象地址的指针设置成nullptr
@@ -10,12 +9,17 @@ Constructors(构造函数)和destructors(析构函数)不能声明为const或vol
 但可以在const或volatile对象上调用它们
 
 
+TODO. 单参数构造函数必须显式标记explicit以避免无意的隐式转换
+explicit MyClass(const std::string& name);
+
 -------------------------------------------------------------
 C++ 析构器的实现，类型的销毁
     类型的析构函数什么时候被调用 ？注意析构函数中指针的删除 ？
 
 C++ virtual 虚函数, 是否需要声明 ？
     不添加virtual是否也能够重写 ？
+
+    什么时纯虚函数 ？？
 
 C++ 三种可访问性
     private 只能在当前类定义中访问到
@@ -35,23 +39,10 @@ C++ 菱形继承的特征，有何问题，如何预防 ？
 类型成员访问控制 friend友元函数 ==> 一般用于执行外部的可访问性
 https://learn.microsoft.com/zh-cn/cpp/cpp/friend-cpp?view=msvc-170
 
-struct Vec3 {
-public:
-    int x;
-    int y;
-    int z;
-
-    Vec3(int x = 0, int y = 0, int z = 0): x(x), y(y), z(z) {}
-
 // 友元函数的作用 操作符合的重载
-    friend std::ostream& operator<<(std::ostream& os, const Vec3& v) {
-        return os << "{ x=" << v.x << ", y=" << v.y << ", z=" << v.z << " }";
-    }
-};
-
-
-
-
+friend std::ostream& operator<<(std::ostream& os, const Vec3& v) {
+   return os << v.x;
+}
 
 TODO. 关于成员函数的特征关键字
 （仅限成员函数）cv 限定符，指定函数是 const 还是 volatile。
