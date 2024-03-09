@@ -4,10 +4,10 @@
 // 自定义可以用于Copy拷贝的类型
 class MyCopyableClass {
 public:
-    MyRefType () {}
+    MyCopyableClass () {}
 
-    MyRefType(const MyRefType &);
-    MyRefType & operator=(const MyRefType &);
+    MyCopyableClass(const MyCopyableClass &);
+    MyCopyableClass& operator=(const MyCopyableClass &);
 };
 
 #endif //CPP_MASTER_MYCOPYABLECLASS_H
