@@ -1,4 +1,0 @@
-
-类型成员访问控制
-https://learn.microsoft.com/zh-cn/cpp/cpp/friend-cpp?view=msvc-170
-

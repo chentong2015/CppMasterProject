@@ -35,9 +35,10 @@ public:
 
 int main() {
     Buf myBuf("my buffer", 10);
+    Buf yourBuf("your buffer", 12);
     myBuf.Display();
 
-    Buf yourBuf("your buffer", 12);
+    // 赋值运算将类型的字符串成员数据拷贝赋值
     myBuf = yourBuf;
     myBuf.Display();
 }
