@@ -3,18 +3,8 @@
 
 #include <iostream>
 
-// TODO. 默认属性的可访问性为私有
-// - private 只能在当前类定义中访问到
-// - protected 只能在当前类中或它的继承类中访问
-// - pubic 全局公开访问
 class DemoClass {
-private:
-    int size;
-    std::string name;
-
-protected:
-    int power = 100;
-
+// TODO. public 全局公开访问
 public:
     // Constructor 默认构造器，特殊成员函数，不能声明为const或volatile
     DemoClass();
@@ -31,6 +21,15 @@ public:
 
     // Destructor 析构函数，特殊成员函数，不能声明为const或volatile
     virtual ~DemoClass();
+
+// TODO. 只能在当前类中或它的继承类中访问
+protected:
+    int power = 100;
+
+// TODO. 只能在当前类中访问到
+private:
+    int size {1}; // 设置属性的默认初始值
+    std::string name {"default"};
 };
 
 #endif //CPP_MASTER_MONSTER_H

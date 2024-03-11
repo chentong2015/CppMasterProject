@@ -7,12 +7,11 @@ void f() {
     cout << "In f \n";
 }
 
+// TODO. 不同名称空间下可以声明项目的函数原型
 namespace A {
-    // TODO. 不同名称空间下可以声明项目的函数原型
     void f() {
         cout << "In A::f \n";
     }
-
     void g() {
         cout << "In A::g \n";
     }

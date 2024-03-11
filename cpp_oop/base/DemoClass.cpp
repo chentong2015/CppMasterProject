@@ -6,6 +6,7 @@
 // 2. 使用this指针访问属性并赋值
 // 3. 使用类型访问属性并赋值
 DemoClass::DemoClass(): size(10) {
+    // 在构造函数中对成员赋值，则该值将覆盖声明时指定的值
 }
 
 DemoClass::DemoClass(const std::string &name) : name(name) {
@@ -17,6 +18,7 @@ DemoClass::DemoClass(int size, int power, const std::string &name) :
     size(size), power(power), name(name) {
     std::cout << "Call monster constructor" << std::endl;
 }
+
 
 int DemoClass::getSize() const {
     return size;
@@ -36,6 +38,7 @@ std::string DemoClass::setName(const std::string &n) {
     DemoClass::name = n;
     return previousName;
 }
+
 
 // 析构函数的实现: 可用于删除指针，释放heap堆分配的内存
 DemoClass::~DemoClass() {

@@ -8,9 +8,9 @@
 
 class SuperClass {
     std::string value;
-    SuperClass() = default;
 
-    // 使用默认的析构器的实现
+    // Use compiler-generated default constructor
+    SuperClass() = default;
     ~SuperClass() = default;
 };
 

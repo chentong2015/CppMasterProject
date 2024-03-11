@@ -1,5 +1,6 @@
 #include <iostream>
 
+// TODO. union类型不能有基类
 union MyUnion {
     int my_int;
     char my_char;

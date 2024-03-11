@@ -1,5 +1,6 @@
 #include <iostream>
 
+// TODO. 结构体的成员默认为public
 struct MyS {
     int myInt;
     char myChar;
@@ -16,12 +17,11 @@ struct MyStruct {
 // TODO. 泛型结构体，在使用该结构体类型时必须提供特化类型和size
 template <class Tp, size_t size>
 struct MyArrayStruct {
-
     Tp elems[size];
 };
 
 int main() {
-    // 结构体可以任意执行数据进行初始化，未初始化则使用默认值
+    // TODO. 可以初始化结构体的任意数据，未初始化则使用默认值
     MyS ms1{ 'a' };               // myInt = 97, myChar = '\0'
     MyS ms2{ 1 };                 // myInt = 1, myChar = '\0'
     MyS ms3{};                          // myInt = 0, myChar = '\0'

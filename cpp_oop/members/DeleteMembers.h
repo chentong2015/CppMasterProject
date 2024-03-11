@@ -26,6 +26,7 @@ struct NonCopyable {
 class NonCopyableClass {
     NonCopyableClass() = default;
 
+    // Don't generate a copy constructor
     NonCopyableClass(const NonCopyableClass&) = delete;
     NonCopyableClass& operator=(const NonCopyableClass&) = delete;
 };

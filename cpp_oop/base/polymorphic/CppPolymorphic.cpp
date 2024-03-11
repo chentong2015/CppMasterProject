@@ -9,7 +9,7 @@ public:
         std::cout << "SuperClass virtual" << std::endl;
     }
 
-    // 普通函数没有多态的特征
+    // 没有多态特征的普通函数
     void testNoVirtual() {
         std::cout << "SuperClass no virtual" << std::endl;
     }
@@ -22,7 +22,7 @@ public:
         std::cout << "OtherClassA virtual" << std::endl;
     }
 
-    // 相当于"hide覆盖"父类的普通函数
+    // "hide覆盖"父类的普通函数
     void testNoVirtual() {
         std::cout << "OtherClassA no virtual" << std::endl;
     }

@@ -1,8 +1,4 @@
 
-类型成员访问控制 friend友元函数 ==> 一般用于执行外部的可访问性
+类型成员访问控制
 https://learn.microsoft.com/zh-cn/cpp/cpp/friend-cpp?view=msvc-170
 
-// 重载<<操作符时必须添加friend关键字
-friend std::ostream& operator<<(std::ostream& os, const Vec3& v) {
-   return os << v.x;
-}
