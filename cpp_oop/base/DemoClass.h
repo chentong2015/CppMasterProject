@@ -14,6 +14,7 @@ public:
     DemoClass(int size, int power, const std::string &name);
 
     // TODO. setter函数的参数名称避免和属性的名称一致
+    //  添加getter可以保证类型的封装性，不直接在类的外部访问数据
     int getSize() const;
     void setSize(int s);
     const std::string &getName() const;

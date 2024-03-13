@@ -6,7 +6,8 @@
 
 class MyClass {
 public:
-    // TODO. 类型成员的操作符重载只接收两个参数，其中包含隐式参数this*
+    // TODO. Compiler considers the operator as a member function of the class.
+    //  重载操作符(成员函数)只接收两个参数: Stream流参数 + 隐式this*参数
     std::ostream& operator<<(std::ostream &os) {
       os << "name: " << this->name << std::endl;
       return os;
@@ -17,8 +18,8 @@ private:
 
 
 class DemoClass {
-    // friend 友元函数不是类型的成员函数，由外部实现
-    // 但友元函数具有成员级访问权限，能够访问类型的私有数据
+    // friend 友元函数不是类型的成员函数，它由外部实现
+    // friend 友元函数具有成员级访问权限，能够访问类型的私有数据
     friend std::ostream& operator<<(std::ostream &os, const DemoClass& demoClass);
 private:
     std::string name {"name"};
