@@ -1,7 +1,7 @@
 #include <iostream>
 
 // 字符指针来指向不同编码格式的字符数组(字符串)
-void charPointerString() {
+void createCharPointer() {
     // String literals
     auto s0 =   "hello"; // const char*
     auto s1 = u8"hello"; // const char* before C++20, encoded as UTF-8
@@ -27,15 +27,14 @@ int main() {
     std::cout << charArray << std::endl; // "a2345" 输出字符数组的值
     std::cout << strlen(charArray) << std::endl; // 5 chars 统计字符数组的字符长度
     std::cout << sizeof charArray << std::endl;     // 6 bytes 统计字符数组的总大小
-
     for (size_t i = 0; i < strlen(charArray); ++i) {
         std::cout << charArray[i] << std::endl;
     }
 
     char chars[] = "hello"; // "hello\0"
     int i = 0;
-    while( chars[i] != '\0'){
-        printf("%c ", chars[i]);
+    while(chars[i] != '\0'){
+        std::cout << chars[i] << std::endl;
         i++;
     }
 

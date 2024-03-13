@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <cstring>
+#include <cstdio>
+#include <string>
 
 // This program opens two files:
 // fclose to close the first file and

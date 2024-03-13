@@ -8,7 +8,7 @@ class MyClass {
 public:
     // TODO. 类型成员的操作符重载只接收两个参数，其中包含隐式参数this*
     std::ostream& operator<<(std::ostream &os) {
-      os << "name: " << this->name;
+      os << "name: " << this->name << std::endl;
       return os;
     }
 private:
@@ -32,8 +32,9 @@ std::ostream& operator<<(std::ostream &os, const DemoClass& demoClass){
 
 int main() {
     MyClass myClass;
-    // 应用自定义重载的操作符(类型的成员函数)
+    // 调用自定义的重载操作符(等效于调成员函数)
     myClass << std::cout;
+    myClass<<(std::cout);
 
     // 调用ostream输出流的自定义操作符，输出流接收DemoClass实例对象作为参数(操作符右侧)
     DemoClass demoClass;
