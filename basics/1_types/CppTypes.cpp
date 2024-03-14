@@ -1,9 +1,10 @@
+#include <iostream>
 
 constexpr int MAXIMUM_ERROR_THRESHOLD = 100;
 
 // C++六种文本类别: 整数、浮点、布尔和指针、字符和字符串
 // 推荐在声明变量时对其进行初始化
-int main(int num) {
+void testCppBasicTypes(int num) {
     // 整数文本
     int i = 157;         // 首字母非0则表示十进制整型文本
     int k = 0365;        // 首字母为0则表示八进制
@@ -35,7 +36,30 @@ int main(int num) {
 
     // 魔术常量: 使用指定常量命令来替换
     if (num < MAXIMUM_ERROR_THRESHOLD) {
-        return 0;
+       std::cout << "num is smaller";
     }
-    return 1;
+}
+
+// TODO. 注意不同类型变量的初始值
+int main() {
+    int i0;     // zero-initialized to 0
+    int* ptr{}; // initialized to nullptr
+    char char1; // '\0'
+    float f1;   // zero-initialized to 0.000000000
+    double d{}; // zero-initialized to 0.00000000000000000
+
+    int int_array[5] = { 8, 9, 10 };  // the fourth and fifth are initialized to 0
+    char s_array[3]{'a', 'b'};  // the third char is initialized to '\0'
+
+    bool check; // true
+    static bool bool1; // false 静态的布尔值初始为假
+    if (check) {
+        std::cout << "check is true" << std::endl;
+    }
+    if (!bool1) {
+        std::cout << "bool1 is false" << std::endl;
+    }
+
+    testCppBasicTypes(12);
+    return 0;
 }

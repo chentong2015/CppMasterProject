@@ -1,5 +1,6 @@
 #include <string.h>
 #include <stdio.h>
+#include <time.h>
 
 // C样式编程定义编译时常量值，宏容易出错且难以调试
 #define SIZE 10
@@ -22,6 +23,9 @@ int main() {
 
     char text[] = "1234";
     printf("\n String: %s", text);
+
+    // C语言时间类型
+    time_t time1;
 
     return 0;
 }
