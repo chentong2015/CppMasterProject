@@ -19,5 +19,5 @@ int main() {
     return 0;
 }
 
-
-
+// 关于数组的理解
+// https://cplusplus.com/doc/tutorial/arrays/
