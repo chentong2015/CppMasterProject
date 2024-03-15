@@ -14,6 +14,10 @@ int main() {
     const char* ptr = "const";
     printf("%s", ptr);
 
+    // keep window open 通过接收数据来维持程序运行
+    char ch;
+    std::cin >> ch;
+
     return 0;
 }
 

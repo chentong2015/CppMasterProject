@@ -2,6 +2,8 @@
 
 // 编译器自动为类型添加non-virtual destructor
 // 编译器可以标记成=default使用默认实现
+// 析构函数是特殊成员函数，不能声明为const或volatile
+
 class UpClass {
 public:
     ~UpClass() {
@@ -15,6 +17,8 @@ public:
     void test() {
         std::cout << "test" << std::endl;
     }
+
+    // 析构函数的实现: 可用于删除指针，释放heap堆分配的内存
     ~DownClass() {
         std::cout << "DownClass destructor" << std::endl;
     }
