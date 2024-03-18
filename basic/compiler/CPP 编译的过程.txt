@@ -1,0 +1,13 @@
+TODO. C++ 编译器
+1. GCC(GNU Compiler Collection) 编译器的集合
+   - gcc is the C compiler frontend to GCC
+   - g++ is the C++ compiler frontend to GCC
+
+2. cmake build systems 系统的构建工具，批量编译和自定义流程
+   - /usr/bin/make 编译命令
+
+1. Mac自带GCC
+   > brew install gcc
+   > g++ -o hello hello.cpp  编译cpp源文件并指定输出文件名称
+   > ./hello 执行编译好的文件
+2. Window 安装g++

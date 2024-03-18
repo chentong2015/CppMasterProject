@@ -1,0 +1,6 @@
+C++ IDE集成开发环境
+- CLion 付费版本
+- XCode 基于GCC构建, 页面不够直观且操作繁琐
+- Visual Studio 不支持Mac平台C++开发
+- Visual Studio Code 配置插件环境
+  https://code.visualstudio.com/docs/cpp/config-clang-mac

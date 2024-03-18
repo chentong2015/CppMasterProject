@@ -1,0 +1,16 @@
+Qt (pronounced "cute")
+Cross-platform software for creating GUI as well as cross-platform APP
+that run on various software/hardware platforms such as Linux, Windows, macOS, Android or embedded systems
+https://wiki.qt.io/Qt_for_Beginners
+
+TODO. 编译和执行QT代码
+Compile demo code to application on linux machine.
+qmake-qt4, g++, must be installed on machine, and other qt4 packages required for Qt Development.
+1: Create a directory hello.
+2: Copy MyForm.h, MyForm.cpp, main.cpp into this  "hello" directory.
+3: cd into hello, the write below commands one by one.
+4: qmake-qt4 -project main.cpp
+5: qmake-qt4 hello.pro
+6: qmake-qt4
+7: make
+8: ./hello

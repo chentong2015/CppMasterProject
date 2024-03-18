@@ -1,7 +1,4 @@
 C++ 代码风格，最佳实践
 
-C++ 商用软件开发
-
 OpenCV 开发视频处理软件
-
-C++ 模块的开发，检测内存的泄漏问题
+https://docs.opencv.org/4.x/index.html
