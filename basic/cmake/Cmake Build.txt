@@ -1,0 +1,8 @@
+CMake build systems
+系统的构建工具，批量编译和自定义编译相关配置
+
+Build code and generate the project
+> cmake -G "CodeLite - Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug
+
+Mac系统cmake路径
+> /usr/bin/make

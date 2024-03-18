@@ -17,6 +17,7 @@ int main() {
     // keep window open 通过接收数据来维持程序运行
     char ch;
     std::cin >> ch;
+    std::cin.get();
 
     return 0;
 }
