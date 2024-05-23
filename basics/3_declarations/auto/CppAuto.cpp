@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 void testAutoBasicTypes() {
     // TODO. 推荐使用auto类型推导，避免类型名称重复

@@ -8,7 +8,8 @@ private:
     // 括号不能用于初始化非静态的成员数据
     int x{0};
     int y = 0;
-    int z(0);
+    
+    // int z(0);
 };
 
 int main() {

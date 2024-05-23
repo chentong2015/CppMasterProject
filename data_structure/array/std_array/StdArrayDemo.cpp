@@ -1,6 +1,7 @@
 #include <array>
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 int main() {
     // 编译器会根据初始化的数据类型和数量来构建array数组

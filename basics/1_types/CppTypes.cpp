@@ -51,7 +51,7 @@ int main() {
     int int_array[5] = { 8, 9, 10 };  // the fourth and fifth are initialized to 0
     char s_array[3]{'a', 'b'};  // the third char is initialized to '\0'
 
-    bool check; // true
+    bool check {}; // true
     static bool bool1; // false 静态的布尔值初始为假
     if (check) {
         std::cout << "check is true" << std::endl;

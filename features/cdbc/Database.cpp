@@ -2,6 +2,8 @@
 #include <string>
 #include "DataAccess.h"
 
+
+/* 
 using namespace DataAccess::DB;
 
 // Simple bootstrap example to perform a simple select on a SQLite in-memory database.
@@ -43,3 +45,4 @@ int main(int argc, char** argv) {
                   << ", salary: $" << res.get<double>("SALARY") << '\n'; }
     return 0;
 }
+*/

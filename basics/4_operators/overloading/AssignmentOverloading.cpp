@@ -13,7 +13,7 @@ public:
         std::strcpy(buffer, sourceBuffer);
     }
 
-    // TODO. 重写类型对象的赋值操作符
+    // TODO. 重写类型对象的赋值操作符, 深度拷贝数据
     Buf& operator=(const Buf& otherBuffer) {
         // 判断this指针指向的地址是否为参数对象的地址，防止自我赋值
         if(this != &otherBuffer){
@@ -30,6 +30,10 @@ public:
     void Display() {
         std::cout << buffer << std::endl;
         std::cout << sizeOfBuffer << std::endl;
+    }
+
+    ~Buf() {
+        delete buffer;
     }
 };
 

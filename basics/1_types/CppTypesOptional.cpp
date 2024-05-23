@@ -1,5 +1,6 @@
 #include <iostream>
 #include <optional>
+#include <string>
 
 // optional can be used to return type of factory that may fail
 std::optional<std::string> create(bool b) {

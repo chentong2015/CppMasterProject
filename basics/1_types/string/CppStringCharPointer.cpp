@@ -1,5 +1,12 @@
 #include <iostream>
 
+int main() {
+    testStringToCharArray();
+
+    std::string value = "test__";
+    printf("Trim: %s\n", trimEndUnderlines(value.data()));
+}
+
 // TODO. 通过字符指针逐个遍历字符串(字符数组)
 void loopStringChars() {
     std::string str = "value";
@@ -31,7 +38,9 @@ void loopStringChars() {
 // - std::strncpy 拷贝指定bytes长度的字符，不足的位置使用null字符填充
 void testStringToCharArray() {
     std::string str = "test";
-    char arr[str.length() + 1];
+    
+    char arr[17]; 
+    // char arr[str.length() + 1]; 新版本的语言特性
 
     std::strcpy(arr, str.c_str());
     std::cout << sizeof arr << std::endl; // 5 bytes
@@ -54,12 +63,4 @@ char* trimEndUnderlines(char* str) {
         pStr--;
     }
     return str;
-}
-
-int main() {
-    loopStringChars();
-    testStringToCharArray();
-
-    std::string value = "test__";
-    printf("Trim: %s\n", trimEndUnderlines(value.data()));
 }

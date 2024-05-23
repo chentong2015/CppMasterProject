@@ -1,6 +1,7 @@
 #ifndef MyForm_H
 #define MyForm_H
 
+/* 
 #include <QLabel>
 #include <QWidget>
 #include <QLineEdit>
@@ -19,5 +20,6 @@ public:
 private slots:
     // A slot that will set the value of label to whatever was written inside QLineEdit.
     void addTextToLabel();
-};
+}; */
+
 #endif

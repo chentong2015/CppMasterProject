@@ -20,6 +20,8 @@ int main() {
     ArgumentsClass<> argumentsClass1;
     ArgumentsClass<int> argumentsClass2;
     ArgumentsClass<int, double> argumentsClass3;
-    MyArray<ArgumentsClass<>, 10> arr;
+    
+    // MyArray<ArgumentsClass<>, 10> arr;
+    
     return 0;
 }

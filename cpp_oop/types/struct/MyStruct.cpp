@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 // TODO. 结构体的成员默认为public
 struct MyS {

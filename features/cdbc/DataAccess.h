@@ -4,6 +4,8 @@
 #include <iostream>
 
 // 自定义ORM层数据库连接CDBC类库，包含通用类型
+
+/* 
 namespace DataAccess {
 
     namespace DB {
@@ -51,7 +53,7 @@ namespace DataAccess {
             std::vector<std::string> results;
         };
     }
-}
+} */
 
 
 #endif //CPP_MASTER_DATAACCESS_H
