@@ -18,7 +18,7 @@ class Derived : public Base {};
 
 using namespace std;
 
-int mainTest() {
+int main() {
     Derived* pd = new Derived();
     Base* pb = pd;
     cout << typeid(pb).name() << endl;   //prints "class Base *"

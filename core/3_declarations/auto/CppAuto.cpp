@@ -25,7 +25,7 @@ void testAutoBasicTypes() {
               << typeid(pptr).name() << std::endl;
 }
 
-int mainTest() {
+int main() {
     // TODO. 在auto推导类型的基础上修改
     auto value = "test";  // const char*
 

@@ -36,7 +36,7 @@ public:
 // 这里的静态属性具有全局名称空间的可访问性
 int CMyClass::numStatic = 0;
 
-int mainTest() {
+int main() {
     CMyClass myObject1;
     CMyClass myObject2;
     myObject1.numStatic = 1;

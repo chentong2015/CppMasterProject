@@ -132,7 +132,7 @@ bool CheckSameNameSynonymAfterNorm(char* baseStr, string comparedStr)
     return false;
 }
 
-int mainTest() {
+int main() {
     char charArray[] = "123";
     char* pointer = charArray;
 

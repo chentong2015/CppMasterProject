@@ -1,6 +1,6 @@
 #include <iostream>
 
-int mainTest() {
+int main() {
     std::string str1 = "test1";
     std::string str2 = "test2";
 

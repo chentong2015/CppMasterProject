@@ -2,7 +2,7 @@
 
 using namespace N;
 
-int mainTest() {
+int main() {
     MyClass myClass;
     myClass.doSomething();
     

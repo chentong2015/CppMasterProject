@@ -8,7 +8,7 @@ using namespace std;
 
 // if-branch或else-branch分支中可以包含break、continue或goto跳转
 // else语句和最接近的上一个if语句相关联
-int mainTest() {
+int main() {
     int x = 10;
     if (x < 11) {
         cout << "x < 11 is true!\n";

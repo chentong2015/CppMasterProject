@@ -21,7 +21,7 @@ struct MyArrayStruct {
     Tp elems[size];
 };
 
-int mainTest() {
+int main() {
     // TODO. 可以初始化结构体的任意数据，未初始化则使用默认值
     MyS ms1{ 'a' };       // myInt = 97, myChar = '\0'
     MyS ms2{ 1 };         // myInt = 1, myChar = '\0'

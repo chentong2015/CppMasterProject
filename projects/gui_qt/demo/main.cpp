@@ -3,7 +3,7 @@
 // 
 // #include "MyForm.h"
 // 
-// int mainTest(int argc, char *argv[]) {
+// int main(int argc, char *argv[]) {
 //     QApplication app(argc, argv);
 //     MyForm* form = new MyForm;
 //     form->show();

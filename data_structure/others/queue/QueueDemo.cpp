@@ -1,7 +1,7 @@
 #include <queue>
 #include <iostream>
 
-int mainTest() {
+int main() {
     std::queue<std::string> inputs;
     inputs.push("first");
     inputs.emplace("second");

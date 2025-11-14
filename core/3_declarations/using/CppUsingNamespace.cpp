@@ -29,7 +29,7 @@ void h() {
     X::g(); // calls A::g
 }
 
-int mainTest() {
+int main() {
     h();
     
     return 0;

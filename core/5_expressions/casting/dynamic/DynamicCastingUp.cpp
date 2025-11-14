@@ -35,7 +35,7 @@
 // }
 
 
-int mainTest() 
+int main()
 {
     return 0;
 }

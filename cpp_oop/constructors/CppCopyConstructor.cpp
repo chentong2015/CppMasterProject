@@ -24,7 +24,7 @@ public:
     Box& operator=(const Box &);
 };
 
-int mainTest() {
+int main() {
     Box box1;
     // Box box2(box1);
     return 0;

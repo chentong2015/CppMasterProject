@@ -16,7 +16,7 @@ void testCharsCopy() {
     // }
 }
 
-int mainTest() {
+int main() {
 	// int pdwFileLength = 0;
 	// char* m_szMemMapping;
     // std::string strRulBuffer = "this is a test";

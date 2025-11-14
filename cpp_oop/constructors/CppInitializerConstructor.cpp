@@ -32,7 +32,7 @@ void testLibCollections() {
     string s {'a', 'b', 'c'};
 }
 
-int mainTest() {
+int main() {
     // 通过大括号来初始化，并传递给特定类型的序列给构造函数
     PointList pc {{}};
     PointList pc1 {3, 4};

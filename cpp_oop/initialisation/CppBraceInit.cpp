@@ -12,7 +12,7 @@ private:
     // int z(0);
 };
 
-int mainTest() {
+int main() {
     // 通常可以使用括号/赋值号/大括号来初始化
     int x(0);  // initializer is in parentheses
     int y = 0; // initializer follows "="

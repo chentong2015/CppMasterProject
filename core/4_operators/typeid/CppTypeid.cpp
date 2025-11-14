@@ -21,7 +21,7 @@ public:
 
 class Derived : public Base {};
 
-int mainTest() {
+int main() {
     Derived* pd = new Derived;
     Base* pb = pd;
 

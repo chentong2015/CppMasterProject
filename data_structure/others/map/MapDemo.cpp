@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int mainTest() {
+int main() {
     map<string, string> apple_color;
     apple_color["test"] = "green";
 

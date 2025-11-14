@@ -4,7 +4,7 @@ int function(int value) {
     return value + 1;
 }
 
-int mainTest() {
+int main() {
     // 1. 丢弃的函数返回值将会被存储到临时对象中
     function(10);
 

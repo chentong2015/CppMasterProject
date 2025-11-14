@@ -31,7 +31,7 @@ public:
     Vec3(int x = 0, int y = 0): x(x), y(y){}
 };
 
-int mainTest() {
+int main() {
     std::string value = "test";
     std::string newValue = "new test";
     Record record(&value, 10);

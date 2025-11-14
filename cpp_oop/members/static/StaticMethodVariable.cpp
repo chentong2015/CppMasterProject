@@ -25,7 +25,7 @@ void showState(int curr) {
     cout << "nStatic is " << nStatic << endl;
 }
 
-int mainTest() {
+int main() {
     C c1;
     C c2;
     c1.test(100);

@@ -1,6 +1,6 @@
 #include <iostream>
 
-int mainTest() {
+int main() {
     // testStringToCharArray();
 
     std::string value = "test__";

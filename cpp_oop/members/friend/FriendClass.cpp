@@ -49,7 +49,7 @@ public:
 };
 
 
-int mainTest() {
+int main() {
     YourClass yc1;
     YourOtherClass yoc1;
 

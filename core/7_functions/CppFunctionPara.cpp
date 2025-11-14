@@ -30,7 +30,7 @@ void testByRightValueRef(const std::string&& input){
     std::cout << input; // 只能作为右值
 }
 
-int mainTest() {
+int main() {
     std::string input {"value"};
     std::cout << input << std::endl;
 

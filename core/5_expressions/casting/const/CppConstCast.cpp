@@ -17,7 +17,7 @@ private:
     int number;
 };
 
-int mainTest() {
+int main() {
     const std::string value = "test";
     const std::string* ptr = &value;
     // *ptr = "new test";

@@ -1,7 +1,7 @@
 #include <iostream> // 标准IO流API
 #include <cstdio>   // CPP标准格式化输出
 
-int mainTest() {
+int main() {
     // 标准Output Stream 输出流
     std::ostream& output = std::cout;
     output.operator<<("value");

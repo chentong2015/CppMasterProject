@@ -47,7 +47,7 @@ void Initialize(std::queue<Input>& inputs) {
     inputs.push(second);
 }
 
-int mainTest() {
+int main() {
     queue<Input> inputs;
     Initialize(inputs);
     while (!inputs.empty()) {

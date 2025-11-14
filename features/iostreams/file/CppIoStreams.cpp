@@ -23,7 +23,7 @@ private:
     FILE *outputFile;
 };
 
-int mainTest() {
+int main() {
     // The file output is directed to a file called "HELLO.DAT"
     FileSource fileSource = "hello.dat";
 

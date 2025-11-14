@@ -3,7 +3,7 @@
 // - const 确保在编译时不会被修改值，常用在函数和变量的声明
 // - const 类型与其非const类型是两种不同的类型
 
-int mainTest() {
+int main() {
     // 1. 常量变量必须与初始值设定项一起声明
     const int i = 5;
     const double PI = 3.14;

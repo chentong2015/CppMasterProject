@@ -37,7 +37,7 @@ private:
 // 1. 调用基构造函数
 // 2. 按照在类声明中出现的"顺序"初始化基类成员
 // 3. 调用派生构造函数
-int mainTest() {
+int main() {
     DerivedContainer dc;
     // Contained1 ctor
     // Contained2 ctor

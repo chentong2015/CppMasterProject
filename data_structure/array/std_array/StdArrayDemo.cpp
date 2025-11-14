@@ -3,7 +3,7 @@
 #include <string>
 #include <algorithm>
 
-int mainTest() {
+int main() {
     // 编译器会根据初始化的数据类型和数量来构建array数组
     std::array v = {1.0, 2.0};
 

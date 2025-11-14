@@ -35,7 +35,7 @@ private:
     Label m_label;
 };
 
-int mainTest(){
+int main(){
     // passing a named Label
     Label label1{ "name", "address" };
     StorageBox sb1(1, 2, 3, label1);

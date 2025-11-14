@@ -35,7 +35,7 @@ public:
     }
 };
 
-int mainTest() {
+int main() {
     DemoClass demoClass(1, "name");
     DemoClass demoClass1(2, "name2");
 

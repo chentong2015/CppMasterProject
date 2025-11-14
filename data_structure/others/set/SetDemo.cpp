@@ -1,7 +1,7 @@
 #include <iostream>
 #include <set>
 
-int mainTest() {
+int main() {
     std::set<std::string> st;
     st.insert({ "geeks", "for", "geeks", "org" });
 

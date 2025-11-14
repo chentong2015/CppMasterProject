@@ -20,7 +20,7 @@ private:
     std::string m_label;
 };
 
-int mainTest(){
+int main(){
     const std::string aLabel = "aLabel";
     StorageBox sb(10, aLabel);
     return 0;

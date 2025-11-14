@@ -17,7 +17,7 @@ public:
 };
 
 // 指向class类实例的指针的四种操作
-int mainTest() {
+int main() {
     auto pointerMc = new MyClass("name 1"); // Allocate object on the heap
     std::cout << pointerMc << std::endl; // 指针的值为16进制地址0x6000000b9240
     std::cout << sizeof pointerMc << std::endl; // 指针的大小为8 bytes

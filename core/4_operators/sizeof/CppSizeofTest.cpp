@@ -21,7 +21,7 @@ void countSizeofArray() {
     cout << sizeof "abc" << endl;  // 4 bytes +1字符串结尾字节，直接传递字符数组
 }
 
-int mainTest() {
+int main() {
     cout << sizeof(char) << endl;   // 1 byte
     cout << sizeof(short) << endl;  // 2 bytes
     cout << sizeof(int) << endl;    // 4 bytes

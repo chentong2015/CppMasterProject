@@ -18,7 +18,7 @@ class DerivedClass: public LeftClass, public RightClass {
 
 // 虚拟基类的多重继承，编译器会选择允许大多数访问的路径
 // RightClass右路径更易于访问
-int mainTest() {
+int main() {
 
     return 0;
 }

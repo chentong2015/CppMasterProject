@@ -23,7 +23,7 @@ using namespace std;
 //    statement;
 // }
 
-int mainTest() {
+int main() {
     int i = 0;
     do {
         printf("\n%d",i++);

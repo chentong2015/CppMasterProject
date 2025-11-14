@@ -1,7 +1,7 @@
 #include <iostream>
 
 // Array数组必须存储相同数据类型的数据
-int mainTest() {
+int main() {
     // 指针指向新分配的数组的首元素地址
     int* pNums = new int[10];
     pNums[0] = 10;

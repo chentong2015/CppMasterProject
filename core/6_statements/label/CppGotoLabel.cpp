@@ -18,7 +18,7 @@ void test_label(int x) {
     cout << "in label2" << endl;
 }
 
-int mainTest() {
+int main() {
     test_label(1);  // in label1
     test_label(2);  // in label2
     

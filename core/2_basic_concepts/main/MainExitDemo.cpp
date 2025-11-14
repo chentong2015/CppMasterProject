@@ -22,7 +22,7 @@ private:
 // ShowData showData("object");
 // ShowData showData1("object1");
 
-int mainTest() {
+int main() {
     // 自动变量
     ShowData showData("object");
     ShowData showData1("object1");

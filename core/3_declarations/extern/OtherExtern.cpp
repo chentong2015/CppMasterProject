@@ -10,7 +10,7 @@ extern int i;
 // 不能修改外部链接的全局变量的定义
 // extern int i = 43;
 
-int mainTest() {
+int main() {
     std::cout << i << std::endl;
 
     // 使用引入的header文件中定义的全局变量

@@ -16,7 +16,7 @@ auto create2(bool b) {
 }
 
 // C++ 17 Optional<> 可空类型
-int mainTest() {
+int main() {
     std::optional<std::string> value;
     std::optional<int> v1;
     std::optional<int> v2(3);

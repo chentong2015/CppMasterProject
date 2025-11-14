@@ -7,7 +7,7 @@
 
 FILE *stream, *stream2;
 
-int mainTest() {
+int main() {
     errno_t err = 0;
 
     // Open for read

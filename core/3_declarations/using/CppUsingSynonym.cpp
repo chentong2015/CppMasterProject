@@ -26,7 +26,7 @@ void b() {
     f('a');     // calls A::f(char);
 }
 
-int mainTest() {
+int main() {
     b();
     return 0;
 }

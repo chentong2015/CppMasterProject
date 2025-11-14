@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int mainTest() {
+int main() {
     // TODO. 指向null空字符的指针并非为空值
     char null = '\0';
     char* pNull = &null;

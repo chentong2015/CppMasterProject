@@ -5,7 +5,7 @@
 // - continue 语句
 // - return 语句
 // - goTo 语句
-int mainTest() {
+int main() {
     for (int i = 1; i < 10; i++) {
         if (i == 4) {
             break;

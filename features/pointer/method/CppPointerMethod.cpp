@@ -44,7 +44,7 @@ void testCopyConstReference(const DemoClass* pDc)  {
     delete pDc;
 }
 
-int mainTest() {
+int main() {
     std::string str = "name 1";
     DemoClass demoClass;
     demoClass.setName(str);

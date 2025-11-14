@@ -19,7 +19,7 @@ private:
     }
 };
 
-int mainTest() {
+int main() {
     VFuncDerived vfd;
 
     // TODO. 如果继承类修改了多态函数的可访问性，则只能通过基类指针来调用

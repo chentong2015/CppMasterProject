@@ -28,7 +28,7 @@ namespace MyNamespace {
     };
 }
 
-int mainTest() {
+int main() {
     MyStruct myStruct;
     myStruct.id = 10;
     myStruct.value = 10.5;

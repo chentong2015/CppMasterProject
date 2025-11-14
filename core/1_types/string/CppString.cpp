@@ -28,7 +28,7 @@ void stringDeclaration() {
     auto S9 =  UR"("Hello \ world")"s; // std::u32string from a raw const char32_t*, encoded as UTF-32
 }
 
-int mainTest() {
+int main() {
     // TODO. nullptr构造字符串是未定义的行为，会导致异常
     std::string str = nullptr;
 

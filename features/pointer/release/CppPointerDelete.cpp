@@ -16,7 +16,7 @@ class NumericInput : public CharInput {
 // TODO. Warning: Allocated memory is leaked
 // 当不再需要"堆分配"的对象时，必须通过指针释放对象所占的内存空间
 // 指针在使用的过程中，如果没有及时删除，则会造成内存泄漏
-int mainTest() {
+int main() {
     // null空指针可以delete回收
     std::string* pStr = nullptr;
     delete pStr;

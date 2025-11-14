@@ -37,7 +37,7 @@ public:
     }
 };
 
-int mainTest() {
+int main() {
     Buf myBuf("my buffer", 10);
     Buf yourBuf("your buffer", 12);
     myBuf.Display();

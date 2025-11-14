@@ -20,7 +20,7 @@ int testConnection() {
     return 0;
 }
 
-int mainTest(int argc, char** argv) {
+int main(int argc, char** argv) {
     Connection cnx("sqlite");
     cnx.open(":memory:");
 

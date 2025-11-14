@@ -28,7 +28,7 @@ public:
     }
 };
 
-int mainTest() {
+int main() {
     OtherClassA otherClassA;
     otherClassA.testVirtual();
     otherClassA.testNoVirtual();

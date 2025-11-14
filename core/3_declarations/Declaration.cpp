@@ -7,7 +7,7 @@
 // Forward declaration 提前声明，在后面的所有代码中可见
 // int test(int i);
 
-int mainTest() {
+int main() {
     const double pi = 3.14; // OK. use build-in types
     
     // int i = test(2);      // OK. test() is forward-declared

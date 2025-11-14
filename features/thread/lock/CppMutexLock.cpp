@@ -7,7 +7,7 @@ mutex mx;
 // guarded by mx 以下数据将有mutex保护
 bool shared_flag = true;
 
-int mainTest() {
+int main() {
 
     // 使用Mutex来加锁保证同步，防止共享数据被多线程同时修改
     // if-condition带有初始值设定，并且flag为true满足执行的条件

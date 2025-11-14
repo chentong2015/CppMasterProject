@@ -5,7 +5,7 @@
 // C样式编程定义编译时常量值，宏容易出错且难以调试
 #define SIZE 10
 
-int mainTest() {
+int main() {
     // C语言不允许使用常量来声明数组长度
     // C样式数组是许多bug的根源，尤其在旧代码中仍然常用
     const int maxArray = 255;

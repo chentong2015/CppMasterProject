@@ -3,7 +3,7 @@
 using namespace std;
 
 
-int mainTest() {
+int main() {
 
     // Initializing two lists of integers
     list<std::string> list1 = { "10", "20", "30", "40", "50" };

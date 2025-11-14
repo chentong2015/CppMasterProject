@@ -11,7 +11,7 @@ void test() {};
 [[nodiscard]] // 不应该丢弃函数的返回值
 int foo(int i) { return i * i; }
 
-int mainTest() {
+int main() {
     foo(42); // discarding return value of function with 'nodiscard' attribute
     return 0;
 }

@@ -17,7 +17,7 @@ public:
     virtual void virtualFunc() const {}
 };
 
-int mainTest() {
+int main() {
     Shape shape_instance;
     Shape& ref_shape = shape_instance;
     try {

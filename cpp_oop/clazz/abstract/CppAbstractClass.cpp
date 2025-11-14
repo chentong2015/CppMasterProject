@@ -16,7 +16,7 @@ public:
     }
 };
 
-int mainTest() {
+int main() {
     // 无法创建抽象类型的实例
     // AbstractClass abstractClass;
 

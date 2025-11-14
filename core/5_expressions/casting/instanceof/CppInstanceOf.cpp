@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int mainTest() {
+int main() {
     Parent p;
     Child c;
     OtherClass a;
