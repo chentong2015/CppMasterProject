@@ -1,4 +1,0 @@
-C++ 代码风格，最佳实践
-
-OpenCV 开发视频处理软件
-https://docs.opencv.org/4.x/index.html
