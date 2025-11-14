@@ -4,42 +4,17 @@
 
 using namespace std;
 
-int main() {
-
-    int pdwFileLength = 0;
-    char* m_szMemMapping;
-    std::string strRulBuffer = "this is a test\n";
-    
-    pdwFileLength = strRulBuffer.size() + 1;
-    m_szMemMapping = new char[pdwFileLength];
-    strcpy(m_szMemMapping, strRulBuffer.c_str());
-    
-    std::cout << pdwFileLength << std::endl;
-    std::cout << m_szMemMapping << std::endl;
-
- 
-    // string strValue = "test chen \n\n";
-    // char* ptr = (char *) strValue.c_str();
-    // cout << strlen(ptr) << endl;
+void testCharsCopy() {
+    // *chppMem = (char*)MapViewOfFile(m_hFileMap, FILE_MAP_READ, 0, 0, 0);
     // 
-    // 
-    // cout << sizeof(ptr) << endl;
-    // 
-    // int size = strValue.size();
-    // if (ptr[size - 1] == '\n' && ptr[size - 2] == '\n')
-    // {
-    //     cout << "Find enter at end" << endl;
+    // int count = strlen(*chppMem);
+    // std::cout << count << std::endl;
+    // int index = 0;
+    // while (index < count) {
+    // 	std::cout << chppMem[index] << std::endl;
+    // 	index++;
     // }
-    // 
-    // for (int index = 0; index < strValue.size(); index++) {
-    //     std::cout << ptr[index] << std::endl;
-    // }
-    // 
-    // cout << "end" << endl;
-
 }
-
-
 
 int mainTest() {
 	// int pdwFileLength = 0;
@@ -87,17 +62,9 @@ int mainTest() {
 
 
     const char* src = "Take the test";
-
-
-    const char* longString = R""""(test test 
-
-
-)"""";
-
-  
+    const char* longString = R""""(test test test)"""";
 
 	// longString.erase(longString.find_last_not_of(' ') + 1);
-
 	// std::cout << longString << std::endl;
 
     char* dst = new char[4097]; // +1 for null terminator
@@ -106,16 +73,4 @@ int mainTest() {
     std::cout << dst;
 
     return 0;
-}
-
-void testCharsCopy() {
-	// *chppMem = (char*)MapViewOfFile(m_hFileMap, FILE_MAP_READ, 0, 0, 0);
-    // 
-	// int count = strlen(*chppMem);
-	// std::cout << count << std::endl;
-	// int index = 0;
-	// while (index < count) {
-	// 	std::cout << chppMem[index] << std::endl;
-	// 	index++;
-	// }
 }

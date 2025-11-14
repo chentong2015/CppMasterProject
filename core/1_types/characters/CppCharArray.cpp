@@ -21,12 +21,13 @@ void createCharPointer() {
 }
 
 // TODO. 由于C++字符串的存储结构，使字符数组的存储多出一个字节的长度
-int main() {
+int main11() {
     char charArray[] = "12345"; // "12345\0"
     charArray[0] = 'a';
     std::cout << charArray << std::endl; // "a2345" 输出字符数组的值
     std::cout << strlen(charArray) << std::endl; // 5 chars 统计字符数组的字符长度
     std::cout << sizeof charArray << std::endl;     // 6 bytes 统计字符数组的总大小
+    
     for (size_t i = 0; i < strlen(charArray); ++i) {
         std::cout << charArray[i] << std::endl;
     }

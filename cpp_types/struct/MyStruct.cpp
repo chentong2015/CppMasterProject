@@ -23,9 +23,9 @@ struct MyArrayStruct {
 
 int main() {
     // TODO. 可以初始化结构体的任意数据，未初始化则使用默认值
-    MyS ms1{ 'a' };               // myInt = 97, myChar = '\0'
-    MyS ms2{ 1 };                 // myInt = 1, myChar = '\0'
-    MyS ms3{};                          // myInt = 0, myChar = '\0'
+    MyS ms1{ 'a' };       // myInt = 97, myChar = '\0'
+    MyS ms2{ 1 };         // myInt = 1, myChar = '\0'
+    MyS ms3{};            // myInt = 0, myChar = '\0'
     MyS ms4{1, 'a'};      // myInt = 1, myChar = 'a'
     MyS ms5 = { 2, 'b' }; // myInt = 2, myChar = 'b'
 

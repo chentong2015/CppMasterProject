@@ -30,3 +30,8 @@ int main() {
     *pCC = 'c';
     // pCC = &dd; 常量指针所指向的地址不能变
 }
+
+void TestConstChar(const char* s, char* const str) {
+    s = "test";
+    str = "new value"
+}
