@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+int mainTest() {
     Parent p;
     Child c;
     OtherClass a;
@@ -25,4 +25,6 @@ int main() {
     if (!instanceof<OtherClass>(childP)) {
         cout << "c is not an instance of OtherClass class" << endl;
     }
+    
+    return 0;
 }

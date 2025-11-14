@@ -19,7 +19,7 @@ private:
     }
 };
 
-int main() {
+int mainTest() {
     VFuncDerived vfd;
 
     // TODO. 如果继承类修改了多态函数的可访问性，则只能通过基类指针来调用
@@ -29,5 +29,6 @@ int main() {
 
     VFuncDerived* pvfd = &vfd;
     // int state = pvfd->GetState();  GetState函数对于子类型是private
+    
     return 0;
 }

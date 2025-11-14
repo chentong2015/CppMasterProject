@@ -23,7 +23,7 @@ private:
     int newMember{ 0 };
 };
 
-int main() {
+int mainTest() {
     Derived d1(5);   // Base(int)
     Derived d2('c'); // Base(char)
     Derived d3 = d2;   // Base(Base&)

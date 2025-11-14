@@ -26,7 +26,7 @@ public:
     string m_string;
 };
 
-int main() {
+int mainTest() {
     // TODO. 大括号初始化，调用指定的构造器
     ClassA c1{}; // 调用类型的默认构造函数
     ClassA c1_1;

@@ -36,7 +36,7 @@ class DerivedClass3 : private BaseClass {
     }
 };
 
-int main() {
+int mainTest() {
     DerivedClass1 derivedClass1;
     derivedClass1.PublicFunc();
     // derivedClass1.ProtectedFunc(); inaccessible
@@ -51,5 +51,6 @@ int main() {
     // derivedClass3.PublicFunc(); inaccessible
     // derivedClass3.ProtectedFunc(); inaccessible
     // derivedClass3.PrivateFunc(); inaccessible
+    
     return 0;
 }

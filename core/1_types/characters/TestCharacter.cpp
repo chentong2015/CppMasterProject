@@ -39,7 +39,7 @@ bool compare_source(s_fmmkeyword first, s_fmmkeyword second, bool order)
     }
 }
 
-int main() {
+int mainTest() {
     s_fmmkeyword first;
     first.Source_id[0] = 'C';
     first.Source_id[1] = '\0';

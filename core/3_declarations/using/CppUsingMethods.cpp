@@ -29,7 +29,9 @@ public:
     }
 };
 
-int main() {
+int mainTest() {
     D myD;
     myD.f(1);
+    
+    return 0;
 }

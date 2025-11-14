@@ -17,7 +17,7 @@ public:
     virtual void virtualFunc() const {}
 };
 
-int main() {
+int mainTest() {
     Shape shape_instance;
     Shape& ref_shape = shape_instance;
     try {
@@ -26,4 +26,6 @@ int main() {
     } catch (bad_cast b) {
         cout << "Caught: " << b.what();
     }
+    
+    return 0;
 }

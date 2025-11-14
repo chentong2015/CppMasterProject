@@ -41,7 +41,7 @@ void testCppBasicTypes(int num) {
 }
 
 // TODO. 注意不同类型变量的初始值
-int main() {
+int mainTest() {
     int i0;     // zero-initialized to 0
     int* ptr{}; // initialized to nullptr
     char char1; // '\0'

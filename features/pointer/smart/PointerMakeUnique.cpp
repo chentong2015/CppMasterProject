@@ -31,7 +31,7 @@ public:
     Vec3(int x = 0, int y = 0): x(x), y(y){}
 };
 
-int main() {
+int mainTest() {
     std::string value = "test";
     std::string newValue = "new test";
     Record record(&value, 10);
@@ -46,4 +46,6 @@ int main() {
 
     // Create a unique_ptr to an array of 5 elements. { x=0, y=0 } ...
     std::unique_ptr<Vec3[]> v3 = std::make_unique<Vec3[]>(5);
+    
+    return 0;
 }

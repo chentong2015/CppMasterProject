@@ -20,7 +20,7 @@ public:
     };
 };
 
-int main() {
+int mainTest() {
     // TODO. 在指针的向下转换时先判断是否是某个类型的实例
     BClass* pb = new DClass();
     if (instanceof<DClass>(pb)) {

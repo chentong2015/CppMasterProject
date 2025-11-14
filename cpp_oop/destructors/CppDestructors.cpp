@@ -27,7 +27,7 @@ public:
 // TODO. 析构器的调用时机
 // 1. delete ptr
 // 2. 不再使用，函数返回
-int main() {
+int mainTest() {
     // 非虚析构器并没有多态性，因此只会调用到指针类型的析构器
     UpClass* upClass = new DownClass();
     delete upClass;

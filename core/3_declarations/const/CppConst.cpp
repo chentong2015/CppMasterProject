@@ -3,7 +3,7 @@
 // - const 确保在编译时不会被修改值，常用在函数和变量的声明
 // - const 类型与其非const类型是两种不同的类型
 
-int main() {
+int mainTest() {
     // 1. 常量变量必须与初始值设定项一起声明
     const int i = 5;
     const double PI = 3.14;
@@ -29,9 +29,13 @@ int main() {
     char* const pCC = &cc;
     *pCC = 'c';
     // pCC = &dd; 常量指针所指向的地址不能变
+    
+    return 0;
 }
 
 void TestConstChar(const char* s, char* const str) {
     s = "test";
-    str = "new value"
+    
+    // 被设置成常量的参数不能再被赋值
+    // str = "new value";
 }

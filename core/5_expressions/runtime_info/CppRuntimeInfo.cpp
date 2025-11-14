@@ -17,7 +17,8 @@ public:
 class Derived : public Base {};
 
 using namespace std;
-int main() {
+
+int mainTest() {
     Derived* pd = new Derived();
     Base* pb = pd;
     cout << typeid(pb).name() << endl;   //prints "class Base *"
@@ -25,4 +26,6 @@ int main() {
     cout << typeid(pd).name() << endl;   //prints "class Derived *"
     cout << typeid(*pd).name() << endl;  //prints "class Derived"
     delete pd; // 只需要释放一个指针
+    
+    return 0;
 }

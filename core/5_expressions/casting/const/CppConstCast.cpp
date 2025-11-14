@@ -17,7 +17,7 @@ private:
     int number;
 };
 
-int main() {
+int mainTest() {
     const std::string value = "test";
     const std::string* ptr = &value;
     // *ptr = "new test";
@@ -31,4 +31,6 @@ int main() {
     CCTest X {};
     X.setNumber( 8 );
     X.printNumber();
+    
+    return 0;
 }

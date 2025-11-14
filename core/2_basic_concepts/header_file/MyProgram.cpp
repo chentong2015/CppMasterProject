@@ -2,8 +2,9 @@
 
 using namespace N;
 
-int main() {
+int mainTest() {
     MyClass myClass;
     myClass.doSomething();
+    
     return 0;
 }

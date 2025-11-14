@@ -12,7 +12,7 @@ tuple<int, string, double> f() {
     return { i,s,d };
 }
 
-int main() {
+int mainTest() {
     auto t = f();
     // get() 全局的泛型方法
     // 返回tuple_element结构体变量的数据值

@@ -10,8 +10,9 @@ using namespace std;
 // TODO. main 两种函数声明，包含完整的参数变量列表
 // - main 未指定返回值，编译器会提供零作为返回值
 // - main 不能使用void返回参数，在程序推出时需要返回值
-// int main();
-int main(int argc,        // 参数计数的整数 >= 1
+// int mainTest();
+
+int mainTest(int argc,        // 参数计数的整数 >= 1
          char *argv[],    // 命令行自变量的字符数组
          char *envp[]) {  // 环境变量的字符数组
 
@@ -29,6 +30,6 @@ int main(int argc,        // 参数计数的整数 >= 1
         }
         cout << envp[i] << "\n";
     }
+    
+    return 0;
 }
-
-

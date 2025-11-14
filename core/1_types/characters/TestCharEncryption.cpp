@@ -13,7 +13,7 @@ using namespace std;
 #define FOF_UTI_RETURN_STR         "\2"
 #define FOF_UTI_RETURN             '\2'
 
-int main() {
+int mainTest() {
 	const char* mypass = "MD6x3MD6TRQ+MFzCBkQZzJ6WW5X2br3Ztoehz+XwnZF7PU95sodAOaDN3jCznNvkDZgQ8+5UywkI32Pfa8r5Iw55ThC6X72tkV1l6BvzoNcR7GHTTfk/TQ==";
 
 	long len = (long)strlen(mypass);

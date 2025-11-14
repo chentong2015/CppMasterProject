@@ -1,7 +1,7 @@
 #include <iostream>
 #include "VectorHelper.h"
 
-int main() {
+int mainTest() {
     // Vector 数组是严格序列的
     std::vector<std::string> v1 = {"item1", "item3", "item2"};
     for(auto& num : v1) {

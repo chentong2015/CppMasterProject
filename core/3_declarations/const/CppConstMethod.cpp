@@ -28,7 +28,7 @@ private:
     std::string name;
 };
 
-int main() {
+int mainTest() {
     Date date1(12, "name1");
     date1.setMonth( 4 );
 

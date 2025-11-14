@@ -17,7 +17,7 @@ public:
     explicit MyClass(int i): num(i) {}
 };
 
-int main() {
+int mainTest() {
     // TODO. 当sizeof运算符应用到数组时，它将产生该数组的字节总数
     // sizeof 运算符返回数组的总大小(以字节为单位)
     char array[] = "Hello, world!";

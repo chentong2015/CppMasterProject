@@ -5,7 +5,7 @@
 // - continue 语句
 // - return 语句
 // - goTo 语句
-int main() {
+int mainTest() {
     for (int i = 1; i < 10; i++) {
         if (i == 4) {
             break;
@@ -29,6 +29,8 @@ int main() {
         continue;
         printf("after the continue, should never print\n");
     } while (i < 3);
+    
+    return 0;
 }
 
 

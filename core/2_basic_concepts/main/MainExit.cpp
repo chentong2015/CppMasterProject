@@ -6,7 +6,7 @@
 // - 从main执行return语句
 
 // void main(); 必须使用exit程序终止函数
-int main() {
+int mainTest() {
     // exit 将终止C++程序, 变量提供的值将作为程序退出代码返回到操作系统
     // exit 允许执行C++运行时终止处理, 调用全局对象析构函数
     exit(0);

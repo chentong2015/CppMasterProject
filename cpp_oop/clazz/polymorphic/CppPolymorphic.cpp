@@ -28,7 +28,7 @@ public:
     }
 };
 
-int main() {
+int mainTest() {
     OtherClassA otherClassA;
     otherClassA.testVirtual();
     otherClassA.testNoVirtual();
@@ -40,6 +40,7 @@ int main() {
     superP->testVirtual();
     superP->testNoVirtual();
     delete superP;
+    
     return 0;
 }
 

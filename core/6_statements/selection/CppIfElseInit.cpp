@@ -15,7 +15,7 @@ auto show(T t) {
     }
 }
 
-int main() {
+int mainTest() {
     // TODO. 带有初始值设定项的if语句, init条件+condition判断
     if (int x = getValue(); x == 42) {
         std::cout << "x is 42\n";
@@ -25,4 +25,6 @@ int main() {
     int* pB = &a;
     std::cout << show(a) << "\n"; // prints "42"
     std::cout << show(pB) << "\n"; // prints "42"
+    
+    return 0;
 }

@@ -29,6 +29,8 @@ void h() {
     X::g(); // calls A::g
 }
 
-int main() {
+int mainTest() {
     h();
+    
+    return 0;
 }

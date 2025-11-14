@@ -7,6 +7,7 @@ using namespace std;
 class Box {
 public:
     Box();
+    
     // Avoid: allows modification of other
     // 可能通过地址修改被用来拷贝的对象
     Box(Box& other);
@@ -23,8 +24,8 @@ public:
     Box& operator=(const Box &);
 };
 
-int main() {
+int mainTest() {
     Box box1;
-    Box box2(box1);
+    // Box box2(box1);
     return 0;
 }

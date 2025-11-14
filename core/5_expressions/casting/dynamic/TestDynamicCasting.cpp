@@ -36,7 +36,7 @@ void castToC(A& a) {
     }
 }
 
-int main() {
+int mainTest() {
     A* pa = new C();
     A* pa2 = new B();
     B* pb = new C();
@@ -65,5 +65,6 @@ int main() {
     delete pa;
     delete pa2;
     delete pb;
+    
     return 0;
 }

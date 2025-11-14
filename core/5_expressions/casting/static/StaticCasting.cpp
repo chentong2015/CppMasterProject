@@ -33,7 +33,7 @@ void castStatic(B* pb, D* pd) {
     }
 }
 
-int main() {
+int mainTest() {
     int i = 65;
     float f = 2.5;
     char ch = static_cast<char>(i);     // int to char
@@ -49,5 +49,6 @@ int main() {
     castStatic(pb, pd);
     delete pb;
     delete pd;
+    
     return 0;
 }

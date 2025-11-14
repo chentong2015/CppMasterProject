@@ -15,7 +15,7 @@ private:
     int size;
 };
 
-int main() {
+int mainTest() {
     Box box(10); // 显式提供特定类型的参数
     Box box1 = 20; // 隐式将提供的int类型转换成Box类类型，并完成赋值
 

@@ -16,11 +16,12 @@ public:
     }
 };
 
-int main() {
+int mainTest() {
     // 无法创建抽象类型的实例
     // AbstractClass abstractClass;
 
     ConcreteClass concreteClass;
     concreteClass.test();
+    
     return 0;
 }

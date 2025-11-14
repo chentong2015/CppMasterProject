@@ -45,7 +45,7 @@ private:
     static std::string sValue;
 };
 
-int main() {
+int mainTest() {
     MyClass myClass;
     myClass.setStringValue("value");
     myClass.testStatic();

@@ -35,7 +35,7 @@ string combineExtraData(char* sourceData, string extraData) {
     return source;
 }
 
-int main111() {
+int mainTest() {
 
     list<string> strList = { "add.csv", "comments.csv", "sdn.csv" };
     strList.remove("comments.csv");

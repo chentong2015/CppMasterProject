@@ -1,7 +1,7 @@
 
 #include "BinarySearchTree.h"
 
-int main() {
+int mainTest() {
     Node node1(5, nullptr, nullptr);
     Node node2(20, nullptr, nullptr);
     Node root(10, &node1, &node2);

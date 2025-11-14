@@ -20,7 +20,7 @@ typedef struct myStructTag {
     double f;
 } MyStructName;
 
-int main() {
+int mainTest() {
     // 使用自定义的被别名类型
     MyInt value = 10;
     UL item = 10.0;
@@ -30,6 +30,7 @@ int main() {
     ms.i = 10;
     ms.f = 0.99;
     printf("%d %f\n", ms.i, ms.f);
+    
     return 0;
 }
 

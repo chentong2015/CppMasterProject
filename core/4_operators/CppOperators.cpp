@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+int mainTest() {
     std::string str1 = "test1";
     std::string str2 = "test2";
 
@@ -8,4 +8,6 @@ int main() {
     // 结果可用于if条件语句判断
     bool result = str1 < str2;
     std::cout << result << std::endl;
+    
+    return 0;
 }

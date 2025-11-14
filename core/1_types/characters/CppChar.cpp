@@ -7,7 +7,7 @@ using namespace std;
 // L  -> 宽字符文本
 // u  -> UTF-16 字符文本
 // U  -> UTF-32 字符文本
-int main() {
+int mainTest() {
     auto c0 =   'A'; // char
     auto c1 = u8'A'; // char
     auto c2 =  L'A'; // wchar_t

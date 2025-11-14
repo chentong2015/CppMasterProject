@@ -17,4 +17,4 @@ private:
 
 // 只有func1作为B的友元函数才能访问B的私有属性
 int A::func1(B& b) { return b.num; }
-int A::func2(B& b) { return b.num; }
+// int A::func2(B& b) { return b.num; }

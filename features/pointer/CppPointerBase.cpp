@@ -9,7 +9,7 @@ void printDoubleArray(double* p, const size_t len) {
     }
 }
 
-int main() {
+int mainTest() {
     // 由于指针没有初始化，ptr会存储随机地址
     int* ptr;
     cout << ptr << endl;
@@ -40,4 +40,6 @@ int main() {
     printDoubleArray(value, 4);
     double d = 10.0;
     printDoubleArray(&d, 1); // 只传递一个长度的数据
+    
+    return 0;
 }

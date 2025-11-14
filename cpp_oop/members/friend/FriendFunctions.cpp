@@ -33,7 +33,7 @@ void changePrivate(Point& point) {
    point.num++;
 }
 
-int main() {
+int mainTest() {
     Point point;
     point.printPrivate();
 

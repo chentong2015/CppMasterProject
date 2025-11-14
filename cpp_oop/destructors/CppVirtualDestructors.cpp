@@ -22,7 +22,7 @@ public:
     }
 };
 
-int main() {
+int mainTest() {
     // 虚析构器具有多态性性，会调用指针指向类型对象上的析构器
     UpClass* upClass = new DownClass();
     upClass->test();

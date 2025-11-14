@@ -32,7 +32,7 @@ union UnionString {
     ~UnionString() {};
 };
 
-int main() {
+int mainTest() {
     // TODO. 使用Union联合类型的默认构造器进行初始化
     MyUnion mu1{ 'a' }; // my_int = 97, my_char = 'a', my_bool = true, {myInt = 97, myChar = '\0'}
     MyUnion mu2{ 1 };   // my_int = 1, my_char = 'x1', my_bool = true, {myInt = 1, myChar = '\0'}
@@ -49,4 +49,6 @@ int main() {
     pRecordUnion->name = "new";
     pRecordUnion->count = 5;    // union holds an int
     delete pRecordUnion;
+    
+    return 0;
 }

@@ -25,7 +25,7 @@ void showState(int curr) {
     cout << "nStatic is " << nStatic << endl;
 }
 
-int main() {
+int mainTest() {
     C c1;
     C c2;
     c1.test(100);
@@ -34,4 +34,6 @@ int main() {
     for (int i = 0; i < 5; i++) {
         showState(i);
     }
+    
+    return 0;
 }

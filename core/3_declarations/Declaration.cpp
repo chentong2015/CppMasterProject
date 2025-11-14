@@ -5,13 +5,18 @@
 // 无法引用稍后在编译单元中某个位置声明的函数或类
 
 // Forward declaration 提前声明，在后面的所有代码中可见
-int test(int i);
+// int test(int i);
 
-int main() {
+int mainTest() {
     const double pi = 3.14; // OK. use build-in types
-    int i = test(2);      // OK. test() is forward-declared
+    
+    // int i = test(2);      // OK. test() is forward-declared
+    
     // AfterClass obj;      // error! C not yet declared.
+    
     std::string str;        // OK std::string is declared in <string> header
+    
+    return 0;
 }
 
 // AfterClass对前面的main()方法不可见

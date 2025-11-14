@@ -23,7 +23,7 @@ using namespace std;
 //    statement;
 // }
 
-int main() {
+int mainTest() {
     int i = 0;
     do {
         printf("\n%d",i++);
@@ -51,5 +51,6 @@ int main() {
     for(k = 0; k < 5; cout << k << '\n', k++){
         ;
     }
+    
     return 0;
 }

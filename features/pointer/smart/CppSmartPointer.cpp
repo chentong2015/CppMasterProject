@@ -44,9 +44,9 @@ public:
     void do_something() {}
 };
 
-int main() {
+int mainTest() {
     Widget1 w1;
-    w1.draw();
+    // w1.draw();
 
     Widget2 w2(1000000);
     w2.do_something();

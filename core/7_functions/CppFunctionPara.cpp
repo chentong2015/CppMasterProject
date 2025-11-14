@@ -30,7 +30,7 @@ void testByRightValueRef(const std::string&& input){
     std::cout << input; // 只能作为右值
 }
 
-int main() {
+int mainTest() {
     std::string input {"value"};
     std::cout << input << std::endl;
 
@@ -42,4 +42,6 @@ int main() {
 
     // 传递右值引用，使用在赋值号的右侧
     testByRightValueRef("test");
+    
+    return 0;
 }

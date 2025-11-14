@@ -4,7 +4,7 @@
 #include "Demo.h"
 #include "DemoSub.h"
 
-int main() {
+int mainTest() {
     int x = 42;
     std::cout << x <<std::endl;
 
@@ -13,5 +13,6 @@ int main() {
 
     DemoSub demoSub;
     demoSub.print();
+    
     return 0;
 }

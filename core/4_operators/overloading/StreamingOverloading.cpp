@@ -31,7 +31,7 @@ std::ostream& operator<<(std::ostream &os, const DemoClass& demoClass){
 }
 
 
-int main() {
+int mainTest() {
     MyClass myClass;
     // 调用自定义的重载操作符(等效于调成员函数)
     myClass << std::cout;

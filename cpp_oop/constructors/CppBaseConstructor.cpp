@@ -38,7 +38,7 @@ private:
 // TODO. 声明类的实例时，编译器会基于重载决策选择要调用的构造函数
 // {} - Uniform initialization (preferred) 推荐使用统一格式的初始化
 // () - Function-style notation
-int main() {
+int mainTest() {
     Box b; // Calls Box()
     Box b2 {5}; // Calls Box(int)
     Box b3 {5, 8, 12}; // Calls Box(int, int, int)

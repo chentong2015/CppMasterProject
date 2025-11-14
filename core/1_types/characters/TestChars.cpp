@@ -132,7 +132,7 @@ bool CheckSameNameSynonymAfterNorm(char* baseStr, string comparedStr)
     return false;
 }
 
-int main999() {
+int mainTest() {
     char charArray[] = "123";
     char* pointer = charArray;
 
@@ -183,10 +183,6 @@ int main999() {
     // std::cout << CheckSameNameSynonym(pointer2, "123") << std::endl;
 
 
-
-
-
-
     // string value = "'STATE ENTERPRISE SPARKLING WINE PLANT 'NOVY SVET''";
     // std::cout << value.cbegin() << std::endl;
     // std::cout << value.cend() << std::endl;
@@ -195,7 +191,6 @@ int main999() {
     // std::cout << value << std::endl;
 
 
-   
     // char charArray[] = "12345";
     // char* cP1 = charArray;
     // string vc = cP1;

@@ -3,7 +3,7 @@
 #include <functional>
 
 // std::list 自带相关操作的API
-int main() {
+int mainTest() {
     std::list<int> list1 {50, 10, 30, 20, 25, 5};
     for(auto item : list1) {
         std::cout << item << " ";

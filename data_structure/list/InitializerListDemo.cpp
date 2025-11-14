@@ -4,7 +4,7 @@ using namespace std;
 
 // initializer_list 初始化表达式列表
 // initializer_list<T> 具有特定类型的对象列表
-int main() {
+int mainTest() {
     // 默认类型推断成initializer_list<T>
     auto iList = {1, 3, 2};
     std::cout << typeid(iList).name() << std::endl;

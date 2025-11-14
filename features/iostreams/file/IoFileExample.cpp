@@ -7,12 +7,12 @@
 
 FILE *stream, *stream2;
 
-int main() {
-    errno_t err;
+int mainTest() {
+    errno_t err = 0;
 
     // Open for read
     // fail if file "crt_fopen_s.c" doesn't exist
-    err  = fopen_s(&stream, "crt_fopen_s.c", "r");
+    // err = fopen_s(&stream, "crt_fopen_s.c", "r");
     if(err == 0) {
         printf("The file 'crt_fopen_s.c' was opened\n");
     } else {
@@ -20,7 +20,7 @@ int main() {
     }
 
     // Open for write
-    err = fopen_s( &stream2, "data2", "w+, ccs=UTF-8");
+    // err = fopen_s( &stream2, "data2", "w+, ccs=UTF-8");
     if(err == 0) {
         printf( "The file 'data2' was opened\n" );
     } else {
@@ -38,6 +38,8 @@ int main() {
     }
 
     // All other files are closed
-    int numclosed = _fcloseall( );
-    printf("Number of files closed by _fcloseall: %u\n", numclosed);
+    // int numclosed = _fcloseall( );
+    // printf("Number of files closed by _fcloseall: %u\n", numclosed);
+    
+    return 0;
 }

@@ -1,10 +1,12 @@
 #include <iostream>
 
-int main() {
-    testStringToCharArray();
+int mainTest() {
+    // testStringToCharArray();
 
     std::string value = "test__";
-    printf("Trim: %s\n", trimEndUnderlines(value.data()));
+    // printf("Trim: %s\n", trimEndUnderlines(value.data()));
+    
+    return 0;
 }
 
 // TODO. 通过字符指针逐个遍历字符串(字符数组)

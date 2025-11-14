@@ -57,7 +57,7 @@ Box createBox() {
     return b;
 }
 
-int main() {
+int mainTest() {
     Box b; // "default"
     Box b1(b); // "copy"
     std::cout << b1.getVolume() << std::endl;

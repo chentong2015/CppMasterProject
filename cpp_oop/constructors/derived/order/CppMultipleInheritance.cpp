@@ -23,7 +23,7 @@ public:
     DerivedClass() { cout << "DerivedClass ctor\n"; }
 };
 
-int main() {
+int mainTest() {
     DerivedClass dc;
     // BaseClass1 ctor
     // BaseClass2 ctor

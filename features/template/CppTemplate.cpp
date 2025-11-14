@@ -5,7 +5,7 @@
 // /std:c++17模式或更高版本中，编译器会推导使用auto声明的非类型模板参数的类型
 template <auto x> constexpr auto constant = x;
 
-int main() {
+int mainTest() {
     // 自动推导auto泛型并设置成变量的值
     auto v1 = constant<5>;      // v1 == 5, decltype(v1) is int
     auto v2 = constant<true>;       // v2 == true, decltype(v2) is bool

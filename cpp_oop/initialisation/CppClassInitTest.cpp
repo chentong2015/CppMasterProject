@@ -20,7 +20,7 @@ struct TempDataWithConstructor {
             stationId{id}, timeSet{t}, current{cur}, maxTemp{maximum}, minTemp{minimum} {}
 };
 
-int main() {
+int mainTest() {
     time_t time_to_set;
 
     // TODO. 没有显式声明构造器，则必须按照成员的声明顺序初始化(in order of declaration)
